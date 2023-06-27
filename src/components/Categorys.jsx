@@ -16,7 +16,10 @@ const Categorys = () => {
   
   
   return (
-<section>
+<section className="categorySection">
+
+<div className="violetCard"></div>
+
 
 <strong>CATEGORIAS WEB</strong>
 

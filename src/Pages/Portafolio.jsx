@@ -13,15 +13,12 @@ const Portafolio = () => {
     <>
       <Navbar />
 
+<section className="portafolio">
 
       <div className="introducer">
 
         <div className="box">
 
-          <span  style={{ '--i': 1 }}>
-
-            <img src="https://images.pexels.com/photos/4705772/pexels-photo-4705772.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
-          </span>
 
           <strong>Portafolio</strong>
 
@@ -55,12 +52,15 @@ const Portafolio = () => {
 
 
       </div>
+{/* <div className="color">
+      <div class="violetCard">ff</div>
+ */}
 
       <Categorys/>
 
 
 <ContactForm/>
-
+</section>
 
 
 
