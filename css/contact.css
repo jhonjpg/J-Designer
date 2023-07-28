@@ -304,7 +304,6 @@ textarea {
 .socialContainer {
     width: 52px;
     height: 52px;
-    background-color: rgb(44, 44, 44);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,6 +315,11 @@ textarea {
 /* instagram*/
 
 .containerOne {
+    background-color: var(--social-media);
+    transition-duration: .3s;
+}
+
+.containerOne:hover {
     background-color: #d62976;
     transition-duration: .3s;
 }
@@ -324,6 +328,11 @@ textarea {
 /* twitter*/
 
 .containerTwo {
+    background-color: var(--social-media);
+    transition-duration: .3s;
+}
+
+.containerTwo:hover {
     background-color: #00acee;
     transition-duration: .3s;
 }
@@ -332,6 +341,11 @@ textarea {
 /* linkdin*/
 
 .containerThree {
+    background-color: var(--social-media);
+    transition-duration: .3s;
+}
+
+.containerThree:hover {
     background-color: #0072b1;
     transition-duration: .3s;
 }
@@ -340,8 +354,13 @@ textarea {
 /* Whatsapp*/
 
 .containerFour {
-    background-color: #128C7E;
+    /* background-color: #128C7E; */
+    background-color: var(--social-media);
     transition-duration: .3s;
+}
+
+.containerFour:hover {
+    background-color: #128C7E;
 }
 
 .socialContainer:active {

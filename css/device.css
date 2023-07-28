@@ -1,0 +1,205 @@
+@media (min-width: 800px) {
+    nav {
+        display: none;
+    }
+    .togglingMenu {
+        display: none !important;
+    }
+    .togglingOff {
+        display: none !important;
+    }
+    .devices {
+        position: fixed;
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        z-index: 100;
+    }
+    .frontPage {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        gap: 5px;
+        background-color: #000;
+    }
+    .frontPage h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 60px;
+        text-shadow: 3px 14px 25px rgba(163, 163, 163, 1), 3px 4px 20px rgba(0, 0, 0, 1);
+    }
+    .frontPage p {
+        text-align: justify;
+        width: 70%;
+        font-size: 15px;
+    }
+    .frontPage h2 {
+        font-size: 25px;
+    }
+    .frontPage button {
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        border: unset;
+        border-radius: 15px;
+        color: #212121;
+        z-index: 1;
+        background: #e8e8e8;
+        position: relative;
+        font-weight: 1000;
+        font-size: 17px;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+        transition: all 250ms;
+        overflow: hidden;
+    }
+    .frontPage button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 15px;
+        background-color: #212121;
+        z-index: -1;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+        transition: all 250ms
+    }
+    .frontPage button:hover {
+        color: #e8e8e8;
+    }
+    .frontPage button:hover::before {
+        width: 100%;
+    }
+    .cp {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    .logo {
+        width: 10%;
+        height: 100%;
+        background-image: url("../img/jplogo.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .devices ul {
+        display: flex;
+        width: 55%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 8px;
+    }
+    .devices ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        gap: 8px;
+    }
+    .devices ul a {
+        color: white;
+        text-decoration: none !important;
+        font-size: 17px;
+    }
+    .sidePics {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+    }
+    .leftPic {
+        width: 25%;
+        height: 100%;
+        background-image: url("../asssets/proyects/law.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .rightPic {
+        width: 25%;
+        height: 100%;
+        background-image: url("../asssets/proyects/beauty.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .techPic {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        background-image: url("../img/curved.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .computer {
+        position: absolute;
+        left: 8px;
+        top: 41px;
+        width: 372px;
+        height: 184px;
+        background-image: url("../asssets//proyects/gym.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .phone {
+        position: absolute;
+        left: 15px;
+        top: 190px;
+        width: 166px;
+        height: 151px;
+        background-image: url("../img/phoneCs.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #categorys ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 15px;
+        width: 100%;
+        padding-left: 20px;
+    }
+    article ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+        gap: 30px;
+        width: 100%;
+        padding: 50px;
+        color: #ffffff;
+        background: radial-gradient( #313131, black);
+    }
+    article .carta {
+        width: 340px;
+        text-align: center;
+    }
+    .contactDiv {
+        width: 100%;
+    }
+    .cartaContact {
+        width: 65%;
+    }
+    .bg {
+        width: 99%;
+    }
+}
