@@ -38,6 +38,9 @@ const FrontPage = () => {
   
   
 <div className="frontPage">
+
+
+
 <div id="logoView">
 
 
@@ -78,18 +81,12 @@ const FrontPage = () => {
 
 </div>
     </div>
+    
 
-    <div className="cp">
+    <div className="computeImg">
 
 
-<Parallax
-        blur={{ min: -15, max: 15 }}
-        bgImage={'../../public/img/home/frontPage.com.webp'}
-        bgImageAlt="the dog"
-        strength={200}
-    >
-        <div style={{ height: '300px' }} />
-    </Parallax>
+
 
 
  </div>
