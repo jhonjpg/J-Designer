@@ -279,7 +279,6 @@ nav ul a {
     width: 390px;
     height: 100%;
     padding: 1em;
-    color: red;
 }
 
 .offserviceH .cartas {
@@ -294,13 +293,14 @@ nav ul a {
     align-items: center;
     width: 100%;
     background: radial-gradient(#ccc, #000);
-    animation: turnOn 1s 1;
+    animation: turnOn 1.6s 1;
     transition: 1s;
 }
 
 @keyframes turnOn {
     0% {
         background: radial-gradient(#000, #000);
+        transition: 1s;
     }
     100% {
         background: radial-gradient(#ccc, #000);
@@ -337,7 +337,7 @@ nav ul a {
 .letterServc {
     position: relative;
     top: 90px;
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -518,27 +518,94 @@ article li i {
 } */
 
 
-/* article li h1 {
-    font-size: 27px;
-    color: black;
-} */
+/* category */
 
-article h3 {
-    width: 100%;
-    font-size: 28px;
+.offcategorySection .strng {
+    width: 50%;
+    font-size: 2em;
     text-align: center;
-    color: white;
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 0px 0px 20px 20px;
+    /* background: radial-gradient(black, rgb(51, 51, 51)); */
+    transform: translateY(30px) rotateX(45deg);
+    box-shadow: rgb(135 38 157) 0px 54px 55px, rgb(135 38 157) 0px -12px 30px, rgb(135 38 157) 0px 4px 6px, rgb(135 38 157)0px 12px 13px, rgb(135 38 157) 0px -3px 5px;
+    animation: serviceOff 1s 1;
 }
 
-article li p {
+.offcategorySection {
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    font-size: 20px;
-    text-align: center;
-    color: white;
+    background-color: black;
+    animation: turnOn 1.5s 1;
+    transition: 1s;
+    animation: turnOff 1s 1;
 }
 
-article li i {
-    color: green;
+@keyframes turnOff {
+    0% {
+        background: radial-gradient(#ccc, #000);
+    }
+    100% {
+        background: radial-gradient(#000, #000);
+    }
+}
+
+@keyframes serviceOff {
+    0% {
+        transform: translateY(0) rotateX(0);
+        width: 80%;
+    }
+    100% {
+        transform: translateY(30px) rotateX(45deg);
+        width: 50%;
+    }
+}
+
+.offcategorySection .servicesList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 390px;
+    height: 100%;
+    padding: 1em;
+}
+
+.categorySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 1em;
+    background: radial-gradient(rgb(135 38 157), #000);
+    animation: CategotyOn 1.6s 1;
+}
+
+@keyframes CategotyOn {
+    0% {
+        background: radial-gradient(#000, #000);
+        transition: 1s;
+    }
+    100% {
+        background: radial-gradient(rgb(135 38 157), #000);
+    }
+}
+
+.categorySection .strng {
+    width: 80%;
+    background-color: rgb(22, 22, 22);
+    background-color: black;
+    border-radius: 0px 0px 20px 20px;
+    /* background: radial-gradient(black, rgb(51, 51, 51)); */
+    animation: service 0.7s 1;
+    transform: translateY(0) rotateX(0);
 }
