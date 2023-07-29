@@ -13,13 +13,41 @@ const Categorys = () => {
     function handleComponentClick(componentName) {
       setActiveComponent(componentName);
     }
+
+
+
+     const [effectCateg, seteffectCateg] = useState(false)
+
+
+
+     const change = (e) => {
+
+      console.log(window.scrollY )
+        
+          if (window.scrollY <= 3200) {
+            seteffectCateg(false);
+        
+          } else {
+            seteffectCateg(true);
+          }
+
+     }        
+
+
+     window.addEventListener("scroll", change)
+
   
+    const effCategory = `offcategorySection ${effectCateg ? "categorySection" : ""}`
+
   
   return (
-<section className="categorySection">
 
-<div className="violetCard"></div>
+    <>
+<section className={effCategory}>
 
+
+<div  className="strng" >  &lt;/&gt;
+ </div>
 
 <strong>CATEGORIAS WEB</strong>
 
@@ -63,6 +91,8 @@ const Categorys = () => {
 
 
 </section>
+
+</>
 )
 }
 
