@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Scrollspy from '../helpers/Scrollspy'
 import { useInView } from 'react-intersection-observer';
 import { InView } from 'react-intersection-observer';
+import { Parallax, Background } from 'react-parallax';
+
 
 
 
@@ -20,13 +22,6 @@ const Services = () => {
                seteffect(true);
           }
 
-          console.log(window.scrollY)
-        
-          // if (window.scrollY > 1330 &&  window.scrollY > 1125) {
-          //      seteffect(!effect);
-          // } else {
-          //      seteffect(!effect);
-          // }
      }        
 
 
@@ -43,11 +38,28 @@ const Services = () => {
 
                <ul   className="servicesList">
 
-<strong  className="strng" >SERVICIOS</strong>
+<div  className="strng" >  &lt;/&gt;
+ </div>
+
+
+<Parallax className="letterParallax"
+ strength={-150}
+ style={{
+  position: 'relative',
+  top:"0px"
+  
+}}>
+        <Background className="letterServc"  >
+Services 
+           </Background>
+
+
+    </Parallax>
 
 
 
-                    <li   className="carta">
+
+                    <li   className="cartas">
 
                          <div className="carta2">
                               <div className="d-flex justify-content-center w-100 p-3">
