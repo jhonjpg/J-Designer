@@ -49,7 +49,7 @@ const Categorys = () => {
 <div  className="strng" >  &lt;/&gt;
  </div>
 
-<strong>CATEGORIAS WEB</strong>
+<strong>PROYECTOS</strong>
 
 <div id="categorys">
 
@@ -59,7 +59,6 @@ const Categorys = () => {
 
 <li className="" onClick={() => handleComponentClick('beauty')}>Belleza</li>
 
-<li className="" onClick={() => handleComponentClick('construction')}>Construccion & Autos</li>
 
 <li className="" onClick={() => handleComponentClick('foods')}>Comida</li>
 
@@ -69,6 +68,7 @@ const Categorys = () => {
 
 <li className="" onClick={() => handleComponentClick('media')}>Entretenimiento</li>
 
+<li className="" onClick={() => handleComponentClick('construction')}>Construccion & Autos</li>
 
 
 </ul>

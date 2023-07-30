@@ -1,12 +1,24 @@
 import React from 'react'
+import { InView } from 'react-intersection-observer';
+
+
 
 const ContactForm = () => {
+
+  
+  
   return (
-<div className="contactDiv">
+
+
+<InView>
+{({ inView, ref, entry }) => (
+
+
+<div ref={ref} className={inView ? 'contactDiv' : ''} >
 
 <div className="violetCard"></div>
 
-<h4>CONTACTAME</h4>
+<strong>CONTACTAME</strong>
 
 <div className="cartaContact">
   <div className="bg">
@@ -66,7 +78,8 @@ const ContactForm = () => {
 </div> 
 
 
-
+)}
+</InView>
 
 
 )

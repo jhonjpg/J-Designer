@@ -158,7 +158,7 @@ Services
 {({ inView, ref, entry }) => (
 
 
-                    <li ref={ref}  className={inView ? 'cartas' : ''}>
+                    <li ref={ref}  className={inView ? 'cartas gradit' : ''}>
                          <div className="carta2">
 
                               <div className="d-flex justify-content-center w-100 p-3">
