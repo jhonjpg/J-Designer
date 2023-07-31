@@ -92,11 +92,11 @@
     background-color: #000;
     gap: 10px;
     width: 100%;
-    height: 660px;
+    height: 1100px;
     padding: 1em;
 }
 
-.contactDiv strong {
+.contactDiv .contactame {
     font-size: 2em;
     color: white;
     text-align: center;
@@ -105,6 +105,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     animation: scale 1s 1;
     overflow: hidden;
+    text-shadow: 2px 14px 2px rgba(0, 0, 0, 1);
 }
 
 @keyframes scale {
@@ -114,6 +115,53 @@
     100% {
         font-size: 2em;
     }
+}
+
+.containerboth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.generalInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    padding: 1em;
+}
+
+.emailTel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 55%;
+}
+
+.generalInfo li {
+    display: flex;
+    font-size: 1.3em;
+    color: white;
+    gap: 12px;
+    width: 100%;
+}
+
+.generalInfo button {
+    width: 50%;
+    align-self: center;
+    background-color: transparent;
+    border: 2px solid rgba(107, 24, 24, 0.452);
+    color: white;
+    padding: 1em;
+}
+
+.generalInfo button:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
 }
 
 .cartaContact {
@@ -130,6 +178,10 @@
     ;
 }
 
+form {
+    padding: 10px;
+}
+
 .bg {
     position: absolute;
     top: 5px;
@@ -137,7 +189,7 @@
     width: 97%;
     height: 100%;
     z-index: 2;
-    background: radial-gradient( #271412, rgba(0, 0, 0, 0.774));
+    background-color: rgba(0, 0, 0, 0.945);
     backdrop-filter: blur(24px);
     border-radius: 10px;
     overflow: hidden;
@@ -153,30 +205,30 @@
     height: 100%;
     border-radius: 50%;
     opacity: 1;
-    filter: blur(20px);
-    animation: blob-bounce 5s infinite ease;
+    filter: blur(0px);
+    animation: blob-bounce 10s infinite ease;
 }
 
 @keyframes blob-bounce {
     0% {
         transform: translate(-100%, -100%) translate3d(0, 0, 0);
-        background-color: #1900ff;
+        background-color: #128C7E;
     }
     25% {
         transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-        background-color: #7809d3;
+        background-color: #00acee;
     }
     50% {
         transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-        background-color: #3fb807;
+        background-color: #d62976;
     }
     75% {
         transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-        background-color: #218cf0;
+        background-color: #0072b1;
     }
     100% {
         transform: translate(-100%, -100%) translate3d(0, 0, 0);
-        background-color: #1900ff;
+        background-color: #128C7E;
     }
 }
 
@@ -186,7 +238,7 @@
     left: 50%;
     height: 100%;
     width: 100%;
-    padding: 40px;
+    padding: 15px;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
@@ -199,32 +251,21 @@
 
 .login-box .user-box input {
     width: 100%;
-    padding: 10px 0;
+    padding: 20px;
     font-size: 16px;
-    color: #000;
+    color: #fff;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
-    background: transparent;
-}
-
-.login-box .user-box label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
+    background-color: rgba(22, 22, 22, 0.671);
 }
 
 .login-box .user-box input:focus~label,
 .login-box .user-box input:valid~label {
     top: -20px;
     left: 0;
-    color: #fff;
+    color: red;
     font-size: 25px;
 }
 
@@ -276,7 +317,7 @@
 textarea {
     border: 1px solid #fff;
     color: #fff;
-    background-color: transparent;
+    background-color: rgba(22, 22, 22, 0.671);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -326,52 +367,28 @@ textarea {
 
 /* instagram*/
 
-.containerOne {
-    background-color: var(--social-media);
-    transition-duration: .3s;
-}
-
-.containerOne:hover {
+.generalInfo .containerOne {
     background-color: #d62976;
-    transition-duration: .3s;
 }
 
 
 /* twitter*/
 
-.containerTwo {
-    background-color: var(--social-media);
-    transition-duration: .3s;
-}
-
-.containerTwo:hover {
+.generalInfo .containerTwo {
     background-color: #00acee;
-    transition-duration: .3s;
 }
 
 
 /* linkdin*/
 
-.containerThree {
-    background-color: var(--social-media);
-    transition-duration: .3s;
-}
-
-.containerThree:hover {
+.generalInfo .containerThree {
     background-color: #0072b1;
-    transition-duration: .3s;
 }
 
 
 /* Whatsapp*/
 
-.containerFour {
-    /* background-color: #128C7E; */
-    background-color: var(--social-media);
-    transition-duration: .3s;
-}
-
-.containerFour:hover {
+.generalInfo .containerFour {
     background-color: #128C7E;
 }
 
