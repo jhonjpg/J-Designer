@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Parallax } from 'react-parallax';
+import Navbar from './Navbar';
 
 
 
@@ -36,7 +37,7 @@ const FrontPage = () => {
 <>
    
   
-  
+  <Navbar/>
 <div className="frontPage">
 
 
@@ -45,7 +46,7 @@ const FrontPage = () => {
 
 
   
-    <h2 >DESARROLLADOR FRONT END</h2>
+    <h2 >DESARROLLADOR WEB</h2>
 
     <h1>JP DESIGNER </h1> 
 

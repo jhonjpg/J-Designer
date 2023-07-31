@@ -11,12 +11,11 @@
     --letter-dark: rgb(31, 31, 31);
     --shadow-color: rgba(235, 233, 233, 0.212);
     --text-color: white;
-    --combination-color: #b2d445;
 }
 
 body {
     /* background-image: url("../img/bgportada.jpg"); */
-    background-color: #000;
+    background-color: #000 !important;
 }
 
 .devices {
@@ -146,6 +145,18 @@ nav ul a {
     height: 60%;
     gap: 8px;
     background-color: var(--dark-color);
+    animation: entrance 1s 1;
+}
+
+@keyframes entrance {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .frontPage h1 {
@@ -209,6 +220,126 @@ nav ul a {
     width: 100%;
 }
 
+.card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 auto;
+}
+
+.socialNet {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    width: 100%;
+    gap: 20px;
+}
+
+
+/* for all social containers*/
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+
+/* instagram*/
+
+.containerOne {
+    background-color: var(--social-media);
+    transition-duration: .3s;
+}
+
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+
+/* twitter*/
+
+.containerTwo {
+    background-color: var(--social-media);
+    transition-duration: .3s;
+}
+
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+
+/* linkdin*/
+
+.containerThree {
+    background-color: var(--social-media);
+    transition-duration: .3s;
+}
+
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+
+/* Whatsapp*/
+
+.containerFour {
+    /* background-color: #128C7E; */
+    background-color: var(--social-media);
+    transition-duration: .3s;
+}
+
+.containerFour:hover {
+    background-color: #128C7E;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .computeImg {
     width: 100%;
     height: 40%;
@@ -217,10 +348,26 @@ nav ul a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    animation: entrance2 1s 1;
+}
+
+@keyframes entrance2 {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 
 /* services */
+
+.servicesListDevice {
+    display: none !important;
+}
 
 .offserviceH {
     position: relative;
@@ -364,32 +511,6 @@ nav ul a {
     opacity: 0;
 }
 
-.serviceH .carta {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    visibility: visible !important;
-    gap: 20px;
-    width: 340px;
-    background-image: linear-gradient(163deg, #fa6232 0%, #592b78 100%);
-    border-radius: 20px;
-    animation: list 2s 1;
-    transition: 2s;
-    transform: translateY(0) rotateX(0);
-    opacity: 1 !important;
-}
-
-@keyframes list {
-    0% {
-        transform: translateY(30px) rotateX(45deg);
-    }
-    100% {
-        transform: translateY(0px) rotateX(0deg);
-    }
-}
-
 .serviceH .cartas {
     display: flex;
     flex-direction: column;
@@ -399,11 +520,26 @@ nav ul a {
     padding: 0px;
     gap: 20px;
     width: 340px;
-    background-image: linear-gradient(163deg, #fa6232 0%, #592b78 100%);
+    background-image: linear-gradient(163deg, #9c9c9c 0%, #575757 100%);
     border-radius: 20px;
     animation: lists 0.5s 1;
     transition: all .3s;
     opacity: 1;
+}
+
+.code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+
+.code i {
+    font-size: 3em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: gray;
 }
 
 @keyframes lists {
@@ -424,6 +560,15 @@ nav ul a {
     color: white;
 }
 
+.serviceH .cartas button {
+    width: 40%;
+    border-radius: 5px;
+    background-color: #575656;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
 .serviceH li p {
     display: flex;
     justify-content: center;
@@ -433,7 +578,19 @@ nav ul a {
     color: white;
 }
 
+.serviceH .cartas button {
+    width: 40%;
+    border-radius: 5px;
+    background-color: #575656;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
 .carta2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 5px;
     width: 100%;
     height: 100%;
@@ -443,81 +600,6 @@ nav ul a {
     transform: scale(0.98);
     box-shadow: var(--shadow-color) var(--shadow-color) 0px 4px 2px, var(--shadow-color) 0px 8px 4px, var(--shadow-color) 0px 16px 8px, var(--shadow-color) 0px 32px 16px;
 }
-
-.carta2:hover {
-    transform: scale(0.98);
-}
-
-.carta:hover {
-    box-shadow: 0px 0px 30px 1px #fa6232;
-}
-
-
-/* article li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 3px;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-} */
-
-
-/* article li h1 {
-    font-size: 27px;
-    color: black;
-} */
-
-article li i {
-    color: green;
-}
-
-.carta {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px;
-    gap: 20px;
-    width: 340px;
-    background-image: linear-gradient(163deg, #fa6232 0%, #592b78 100%);
-    border-radius: 20px;
-    transition: all .3s;
-}
-
-.carta2 {
-    padding: 5px;
-    width: 100%;
-    height: 100%;
-    background-color: #1a1a1a;
-    transition: all .2s;
-    border-radius: 30px;
-    transform: scale(0.98);
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.carta2:hover {
-    transform: scale(0.98);
-}
-
-.carta:hover {
-    box-shadow: 0px 0px 30px 1px #fa6232;
-}
-
-
-/* article li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 3px;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-} */
 
 
 /* category */
@@ -601,7 +683,6 @@ article li i {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 1em;
     background: radial-gradient(rgb(135 38 157), #000);
     animation: CategotyOn 1.6s 1;
 }
@@ -620,7 +701,6 @@ article li i {
     width: 80%;
     color: rgb(135 38 157);
     background-color: rgb(22, 22, 22);
-    background-color: black;
     border-radius: 0px 0px 20px 20px;
     /* background: radial-gradient(black, rgb(51, 51, 51)); */
     animation: service 0.7s 1;
@@ -698,6 +778,10 @@ article li i {
 
 /* categorys */
 
+.categorySection {
+    padding-top: 50px;
+}
+
 .categorySection #categorys {
     display: flex;
     flex-direction: column;
@@ -727,6 +811,7 @@ article li i {
     justify-content: space-around;
     padding: 1.3em;
     visibility: visible;
+    background: linear-gradient( transparent, rgb(0 0 0), rgb(0 0 0));
 }
 
 .offContainerProyects {
@@ -739,7 +824,6 @@ article li i {
     justify-content: center;
     align-items: center;
     min-width: 390px;
-    animation: fff 3s 1;
 }
 
 @keyframes fff {

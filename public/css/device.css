@@ -1,4 +1,9 @@
 @media (min-width: 800px) {
+    body {
+        /* background-image: url("../img/bgportada.jpg"); */
+        background-color: #000 !important;
+        padding: 50px;
+    }
     nav {
         display: none;
     }
@@ -18,14 +23,21 @@
         z-index: 100;
     }
     .frontPage {
-        position: relative;
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
+    }
+    #logoView {
+        display: flex;
+        padding-top: 1em;
+        flex-direction: column;
         align-items: center;
-        height: 100vh;
-        gap: 5px;
-        background-color: #000;
+        justify-content: center;
+        color: #d1d1d1bf;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        height: 100%;
+        width: 50%;
+        gap: 30px;
+        background-color: var(--dark-color);
+        animation: entrance 1s 1;
     }
     .frontPage h1 {
         display: flex;
@@ -81,10 +93,15 @@
     .frontPage button:hover::before {
         width: 100%;
     }
-    .cp {
-        width: 100%;
+    .computeImg {
+        width: 50%;
         height: 100%;
+        object-fit: cover;
+        background-image: url("../img/home/frontPage.com.webp");
         background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation: entrance2 1s 1;
     }
     .logo {
         width: 10%;
@@ -94,112 +111,212 @@
         background-position: center;
         background-size: contain;
     }
-    .devices ul {
-        display: flex;
-        width: 55%;
-        height: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 8px;
+    /* services */
+    .servicesList {
+        display: none !important;
     }
-    .devices ul li {
+    .serviceH {
+        background-color: black !important;
+    }
+    .servicesListDevice {
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        width: 390px;
+        height: 100%;
+        padding: 1em;
+    }
+    .serviceH .servicesListDevice {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: radial-gradient(rgb(92, 92, 92), #000);
+        animation: none !important;
+        transition: 1s;
+        gap: 15px;
+    }
+    .servicesListDevice .strng {
+        width: 40% !important;
+        background-color: rgb(22, 22, 22);
+        background-color: black;
+        border-radius: 0px 0px 20px 20px;
+        /* background: radial-gradient(black, rgb(51, 51, 51)); */
+        animation: service 0.7s 1;
+        transform: translateY(0) rotateX(0);
+    }
+    .serviceH .cartas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 25% !important;
+        height: auto !important;
+        background-image: linear-gradient(163deg, #9c9c9c 0%, #575757 100%);
+        border-radius: 20px;
+        animation: list 1s 1;
+        transition: all .3s;
+        opacity: 1;
+    }
+    @keyframes list {
+        0% {
+            opacity: 0;
+            transform: translateX(200px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .code {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        height: 100%;
-        gap: 8px;
-    }
-    .devices ul a {
-        color: white;
-        text-decoration: none !important;
-        font-size: 17px;
-    }
-    .sidePics {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
         width: 100%;
-        height: 200px;
+        padding: 0em !important;
     }
-    .leftPic {
-        width: 25%;
+    .code i {
+        font-size: 3em;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: gray;
+    }
+    @keyframes lists {
+        0% {
+            opacity: 0;
+            transform: translateY(70px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    .serviceH h3 {
+        width: 100%;
+        font-size: 20px !important;
+        text-align: center;
+        color: white;
+    }
+    .serviceH .cartas button {
+        width: 70%;
+        border-radius: 5px;
+        background-color: #575656;
+        border: none;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .serviceH li p {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+    }
+    .serviceH .cartas button {
+        width: 40%;
+        border-radius: 5px;
+        background-color: #575656;
+        border: none;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .carta2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        width: 100%;
         height: 100%;
-        background-image: url("../asssets/proyects/law.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background-color: #1a1a1a;
+        transition: all .2s;
+        border-radius: 30px;
+        transform: scale(0.98);
+        box-shadow: var(--shadow-color) var(--shadow-color) 0px 4px 2px, var(--shadow-color) 0px 8px 4px, var(--shadow-color) 0px 16px 8px, var(--shadow-color) 0px 32px 16px;
     }
-    .rightPic {
-        width: 25%;
-        height: 100%;
-        background-image: url("../asssets/proyects/beauty.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    /* categoria */
+    .offcategorySection .strng {
+        width: 20% !important;
+        font-size: 2em;
+        text-align: center;
+        color: rgb(75, 75, 75);
+        font-weight: bold;
+        font-family: monospace;
+        border-radius: 0px 0px 20px 20px;
+        /* background: radial-gradient(black, rgb(51, 51, 51)); */
+        transform: translateY(30px) rotateX(45deg);
+        box-shadow: rgba(43, 5, 114, 0.144) 0px 54px 55px, rgba(43, 5, 114, 0.561) 0px -12px 30px, rgba(43, 5, 114, 0.561) 0px 4px 6px, rgba(43, 5, 114, 0.561) 0px 12px 13px, rgba(43, 5, 114, 0.561)0px -3px 5px;
     }
-    .techPic {
-        position: relative;
-        width: 400px;
-        height: 300px;
-        background-image: url("../img/curved.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
+    .categorySection {
+        padding-top: 50px;
     }
-    .computer {
-        position: absolute;
-        left: 8px;
-        top: 41px;
-        width: 372px;
-        height: 184px;
-        background-image: url("../asssets//proyects/gym.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .phone {
-        position: absolute;
-        left: 15px;
-        top: 190px;
-        width: 166px;
-        height: 151px;
-        background-image: url("../img/phoneCs.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    .categorySection .strng {
+        width: 40% !important;
+        color: rgb(135 38 157);
+        background-color: rgb(22, 22, 22);
+        border-radius: 0px 0px 20px 20px;
+        /* background: radial-gradient(black, rgb(51, 51, 51)); */
+        animation: service 0.7s 1;
+        transform: translateY(0) rotateX(0);
+        box-shadow: rgb(135 38 157) 0px 54px 55px, rgb(135 38 157) 0px -12px 30px, rgb(135 38 157) 0px 4px 6px, rgb(135 38 157) 0px 12px 13px, rgb(135 38 157)0px -3px 5px;
     }
     #categorys ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
         gap: 15px;
         width: 100%;
+        justify-content: center;
+        align-items: center !important;
         padding-left: 20px;
     }
-    article ul {
+    #categorys ul li {
+        font-size: 17px;
+        width: 11% !important;
+        color: white;
+    }
+    .containerboth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .generalInfo {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0px;
-        gap: 30px;
+        gap: 25px;
         width: 100%;
-        padding: 50px;
-        color: #ffffff;
-        background: radial-gradient( #313131, black);
-    }
-    article .carta {
-        width: 340px;
-        text-align: center;
+        padding: 1em;
     }
     .contactDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        gap: 10px;
         width: 100%;
+        height: 900px;
+        padding: 1em;
     }
     .cartaContact {
-        width: 65%;
-    }
-    .bg {
-        width: 99%;
+        position: relative;
+        width: 50%;
+        height: 100%;
+        border-radius: 14px;
+        z-index: 1111;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        ;
     }
 }

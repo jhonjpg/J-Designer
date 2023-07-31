@@ -18,21 +18,25 @@ const Categorys = () => {
 
      const [effectCateg, seteffectCateg] = useState(false)
 
-
-
      const change = (e) => {
-
-      console.log(window.scrollY )
-        
-          if (window.scrollY <= 3200) {
-            seteffectCateg(false);
-        
-          } else {
-            seteffectCateg(true);
-          }
-
-     }        
-
+      const isMobile = window.innerWidth <= 800; // Establece el ancho máximo para considerar como dispositivo móvil (puedes ajustar este valor según tus necesidades).
+    
+      if (isMobile) {
+        // Valores para dispositivos móviles
+        if (window.scrollY <= 3200) {
+          seteffectCateg(false);
+        } else {
+          seteffectCateg(true);
+        }
+      } else {
+        // Valores para dispositivos no móviles (escritorio, tabletas grandes, etc.)
+        if (window.scrollY <= 1300) {
+          seteffectCateg(false);
+        } else {
+          seteffectCateg(true);
+        }
+      }
+    }
 
      window.addEventListener("scroll", change)
 
