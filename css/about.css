@@ -12,6 +12,7 @@
     background-attachment: fixed;
     overflow: hidden;
     padding: 0px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1073%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(37%2c 37%2c 37%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c504.259C96.37%2c506.209%2c196.308%2c482.621%2c271.026%2c421.725C342.601%2c363.391%2c354.943%2c263.53%2c396.527%2c181.088C440.191%2c94.521%2c529.898%2c21.608%2c521.569%2c-74.99C513.209%2c-171.947%2c430.678%2c-246.642%2c354.431%2c-307.116C286.664%2c-360.864%2c196.964%2c-364.931%2c116.381%2c-396.357C26.124%2c-431.556%2c-51.119%2c-510.85%2c-147.672%2c-502.926C-249.414%2c-494.576%2c-341.01%2c-430.563%2c-407.775%2c-353.339C-474.502%2c-276.16%2c-506.54%2c-175.859%2c-518.084%2c-74.489C-529.396%2c24.846%2c-518.945%2c127.244%2c-472.589%2c215.824C-427.544%2c301.899%2c-346.993%2c360.288%2c-264.069%2c410.899C-182.73%2c460.543%2c-95.273%2c502.331%2c0%2c504.259' fill='%23181818'%3e%3c/path%3e%3cpath d='M1440 1010.315C1526.254 1012.2239999999999 1610.084 984.226 1683.16 938.365 1756.769 892.1700000000001 1835.1680000000001 834.206 1855.3220000000001 749.671 1874.997 667.144 1814.9859999999999 589.807 1785.2 510.368 1761.888 448.197 1731.475 393.23900000000003 1699.795 334.88599999999997 1658.416 258.67 1652.435 143.91199999999998 1570.624 115.13600000000002 1489.859 86.72699999999998 1417.548 179.861 1336.365 207.05200000000002 1259.306 232.86200000000002 1158.79 208.803 1106.1399999999999 270.709 1053.466 332.64300000000003 1085.463 427.13300000000004 1080.185 508.266 1075.376 582.197 1055.603 654.923 1076.5230000000001 725.995 1099.433 803.828 1139.754 877.764 1203.66 927.7529999999999 1270.747 980.23 1354.847 1008.4300000000001 1440 1010.315' fill='%23323232'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1073'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 #about {
@@ -47,6 +48,7 @@
 .out p {
     width: 80% !important;
     font-size: 10px;
+    z-index: 1;
 }
 
 .know {
@@ -93,64 +95,71 @@
 .aboutimg img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .float {
     position: relative;
-    right: 10px;
-    width: 70px;
+    right: 0px;
+    width: 50px;
     height: 100%;
     font-size: 18px;
 }
 
 .float2 {
     position: relative;
-    right: 80px;
-    width: 70px;
+    right: 50px;
+    width: 50px;
     height: 100%;
     font-size: 18px;
 }
 
 .float3 {
     position: relative;
-    left: 10px;
-    width: 70px;
+    left: 0px;
+    width: 50px;
     height: 100%;
     font-size: 18px;
 }
 
 .float4 {
     position: relative;
-    left: 88px;
-    width: 70px;
+    left: 50px;
+    width: 50px;
     height: 100%;
     font-size: 18px;
 }
 
 .float5 {
     position: relative;
-    left: 160px;
-    width: 70px;
+    left: 100px;
+    width: 50px;
     height: 100%;
     font-size: 18px;
 }
 
-.codeAbout {
-    width: 400px;
-    height: 100%;
-    font-size: 18px;
-    color: white;
-}
-
-.codeAbout .span {
+.float6 {
     position: relative;
-    left: 180px;
+    left: 250px;
+    width: 40px;
+    height: 100%;
     font-size: 18px;
-    color: #ccc;
-    width: 520px;
-    height: 40%;
-    transform: rotate(90deg);
+}
+
+.float7 {
+    position: relative;
+    left: 200px;
+    width: 50px;
+    height: 100%;
+    font-size: 18px;
+}
+
+.float8 {
+    position: relative;
+    left: 150px;
+    width: 50px;
+    height: 100%;
+    font-size: 18px;
 }
 
 .span1 {
@@ -158,8 +167,8 @@
     top: 2400px;
     font-size: 18px;
     color: #ccc;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     animation: rotate 4s linear infinite;
 }
 
@@ -168,8 +177,8 @@
     top: 2200px;
     font-size: 18px;
     color: #ccc;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     animation: rotate 4s linear infinite;
 }
 
@@ -178,18 +187,18 @@
     top: 2000px;
     font-size: 18px;
     color: #ccc;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     animation: rotate 4s linear infinite;
 }
 
 .span4 {
     position: relative;
-    top: 1930px;
+    top: 2230px;
     font-size: 18px;
     color: #ccc;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     animation: rotate 4s linear infinite;
 }
 
@@ -198,8 +207,38 @@
     top: 1800px;
     font-size: 18px;
     color: #ccc;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
+    animation: rotate 4s linear infinite;
+}
+
+.span6 {
+    position: relative;
+    top: 1800px;
+    font-size: 18px;
+    color: #ccc;
+    width: 30px;
+    height: 30px;
+    animation: rotate 4s linear infinite;
+}
+
+.span7 {
+    position: relative;
+    top: 1900px;
+    font-size: 18px;
+    color: #ccc;
+    width: 30px;
+    height: 30px;
+    animation: rotate 4s linear infinite;
+}
+
+.span8 {
+    position: relative;
+    top: 2000px;
+    font-size: 18px;
+    color: #ccc;
+    width: 30px;
+    height: 30px;
     animation: rotate 4s linear infinite;
 }
 
@@ -233,8 +272,8 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    padding: 1em;
-    background: linear-gradient( transparent, rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767));
+    padding: 10px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1073%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(37%2c 37%2c 37%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c504.259C96.37%2c506.209%2c196.308%2c482.621%2c271.026%2c421.725C342.601%2c363.391%2c354.943%2c263.53%2c396.527%2c181.088C440.191%2c94.521%2c529.898%2c21.608%2c521.569%2c-74.99C513.209%2c-171.947%2c430.678%2c-246.642%2c354.431%2c-307.116C286.664%2c-360.864%2c196.964%2c-364.931%2c116.381%2c-396.357C26.124%2c-431.556%2c-51.119%2c-510.85%2c-147.672%2c-502.926C-249.414%2c-494.576%2c-341.01%2c-430.563%2c-407.775%2c-353.339C-474.502%2c-276.16%2c-506.54%2c-175.859%2c-518.084%2c-74.489C-529.396%2c24.846%2c-518.945%2c127.244%2c-472.589%2c215.824C-427.544%2c301.899%2c-346.993%2c360.288%2c-264.069%2c410.899C-182.73%2c460.543%2c-95.273%2c502.331%2c0%2c504.259' fill='%23181818'%3e%3c/path%3e%3cpath d='M1440 1010.315C1526.254 1012.2239999999999 1610.084 984.226 1683.16 938.365 1756.769 892.1700000000001 1835.1680000000001 834.206 1855.3220000000001 749.671 1874.997 667.144 1814.9859999999999 589.807 1785.2 510.368 1761.888 448.197 1731.475 393.23900000000003 1699.795 334.88599999999997 1658.416 258.67 1652.435 143.91199999999998 1570.624 115.13600000000002 1489.859 86.72699999999998 1417.548 179.861 1336.365 207.05200000000002 1259.306 232.86200000000002 1158.79 208.803 1106.1399999999999 270.709 1053.466 332.64300000000003 1085.463 427.13300000000004 1080.185 508.266 1075.376 582.197 1055.603 654.923 1076.5230000000001 725.995 1099.433 803.828 1139.754 877.764 1203.66 927.7529999999999 1270.747 980.23 1354.847 1008.4300000000001 1440 1010.315' fill='%23323232'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1073'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 .aboutFront h3 {
@@ -261,13 +300,6 @@
     background-position: top; */
 }
 
-.ffff {
-    background: url("../asssets/ilustracion/startn.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 #about h5 {
     width: 90%;
     font-size: 2em;
@@ -275,26 +307,18 @@
     text-align: center;
 }
 
-#about h6 {
+#about h1 {
     text-align: center;
     width: 100%;
     font-size: 2em;
     color: white;
-}
-
-.me {
-    text-align: justify;
-    width: 100%;
-    font-size: 1em;
-    color: white;
-    padding: 20px;
-    border-radius: 30px;
-    background: #212121c5;
+    background-color: rgb(31, 31, 31);
+    padding: 10px;
 }
 
 #about p {
     text-align: justify;
-    width: 100%;
+    width: 90%;
     font-size: 1em;
     color: white;
 }
@@ -302,10 +326,37 @@
 .experience {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding: 20px 0px 10px 0px;
+}
+
+.experience h3 {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    background-color: rgb(31, 31, 31);
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.hability {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center !important;
+    gap: 10px;
+    width: 100%;
+}
+
+.hability span {
+    text-align: center;
+    width: 100px;
+    height: 140px;
+    overflow: hidden;
 }
 
 .experience span div {
@@ -320,18 +371,18 @@
 }
 
 .experience li {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     color: white;
-    background-color: #271412;
-    background: linear-gradient(rgb(8, 5, 32), #271412, transparent);
 }
 
-.experience li:nth-child(1) {
-    background-color: rgb(8, 5, 32);
+.experience li:nth-child(1) {}
+
+.experience li:nth-child(2) {
+    width: 100%;
 }
 
 
@@ -343,7 +394,6 @@
     justify-content: center;
     min-width: 180px;
     border-radius: 30px;
-    background: #000;
     box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
     padding: 1em !important;
 }
@@ -467,6 +517,7 @@ pre {
     height: auto !important;
     border-radius: 10px;
     overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.301);
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
@@ -482,7 +533,7 @@ pre {
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 50%;
 }
 
