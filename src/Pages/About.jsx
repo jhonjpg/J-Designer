@@ -38,17 +38,92 @@ const About = () => {
     </Parallax>
  
     <Parallax
-      className="codeAbout"
-      strength={1300}
+      className="float"
+      strength={-1600}
       style={{
         position: 'absolute',
-       top:"0px"
+       botom:"0px"
       }}
      >
 
 
 
-<Background className="span2">   { `<script type="module" src="/src/aboutme.jsx"></script>`}
+<Background className="span1">  <img src="skills/javascript.jpg" alt=""  />
+</Background>
+
+
+
+
+
+
+
+    </Parallax>
+
+
+
+    <Parallax
+      className="float2"
+      strength={-1300}
+      style={{
+        position: 'absolute',
+       botom:"0px"
+      }}
+     >
+
+
+
+<Background className="span2">  <img src="skills/csss.jpg" alt=""  />
+</Background>
+
+
+
+
+
+
+
+
+    </Parallax>
+ 
+ 
+
+
+    <Parallax
+      className="float3"
+      strength={-1250}
+      style={{
+        position: 'absolute',
+       botom:"0px"
+      }}
+     >
+
+
+
+
+
+
+<Background className="span3">  <img src="skills/html.jpg" alt=""  />
+</Background>
+
+
+
+
+    </Parallax>
+ 
+ 
+
+
+    <Parallax
+      className="float4"
+      strength={-1000}
+      style={{
+        position: 'absolute',
+       botom:"0px"
+      }}
+     >
+
+
+
+<Background className="span4">  <img src="skills/reactjs.jpg" alt=""  />
 </Background>
 
 
@@ -56,6 +131,45 @@ const About = () => {
  
 
 
+    <Parallax
+      className="float5"
+      strength={-850}
+      style={{
+        position: 'absolute',
+       botom:"0px"
+      }}
+     >
+
+
+
+
+<Background className="span5">  <img src="skills/boostrap.jpg" alt=""  />
+</Background>
+
+
+    </Parallax>
+ 
+ 
+ 
+    {/* <Parallax
+      className="float"
+      strength={-500}
+      style={{
+        position: 'absolute',
+       top:"0px"
+      }}
+     >
+
+
+<Background className="span2">  <img src="skills/css.jpg" alt=""  />
+</Background>
+
+
+    </Parallax>
+  */}
+
+
+   
          <strong >SOBRE MI</strong>
 
        <div className="aboutimg">
@@ -107,22 +221,19 @@ const About = () => {
               </p>
             </li>
             <li >
-              <div className="d-flex justify-content-center w-100">
-                <img src="./asssets/icons/pc.png" alt="" width="85px" />
-              </div>
+            
               <h3> Habilidades </h3>
 
-              <p>HTML <i className="bi bi-check2"></i></p>
-              <p>CSS <i className="bi bi-check2"></i></p>
-              <p>JAVASCRIPT <i className="bi bi-check2"></i></p>
-              
-              <p>J-QUERTY <i className="bi bi-check2"></i></p>
-              <p>REACT JS <i className="bi bi-check2"></i></p>
-              <p>NODE JS <i className="bi bi-check2"></i></p>
-              <p>MONGO DB <i className="bi bi-check2"></i></p>
-              <p>GITHUB <i className="bi bi-check2"></i></p>
-              <p>BOOSTRAP <i className="bi bi-check2"></i></p>
-              <p>TAILWIND <i className="bi bi-check2"></i></p>
+              <span>HTML <div className=""> <img src="skills/html.jpg" alt="" /></div></span>
+              <span>CSS <div className=""><img src="skills/csss.jpg" alt="" /></div></span>
+              <span>JAVASCRIPT <div className=""><img src="skills/javascript.jpg" alt="" /></div></span>
+              <span>J-QUERTY <div className=""><img src="skills/jquery.jpg" alt="" /></div></span>
+              <span>REACT JS <div className=""><img src="skills/reactjs.jpg" alt="" /></div></span>
+              <span>NODE JS <div className=""><img src="skills/nodejs.jpg" alt="" /></div></span>
+              <span>MONGO DB <div className=""><img src="skills/mongodb.jpg" alt="" /></div></span>
+              <span>GITHUB <div className=""><img src="skills/github.jpg" alt="" /></div></span>
+              <span>BOOSTRAP <div className=""><img src="skills/boostrap.jpg" alt="" /></div></span>
+              <span>TAILWIND <div className=""><img src="skills/tailwind.jpg" alt="" /></div></span>
 
 
 
