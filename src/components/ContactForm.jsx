@@ -34,9 +34,9 @@ const ContactForm = () => {
 <div className="emailTel">
 
  <p className="text-light fs-5 text-center">Contacto</p> 
-<li><i class="bi bi-envelope-at-fill"></i> jonathan050315jj@gmail.com</li>
+<li><i className="bi bi-envelope-at-fill"></i> jonathan050315jj@gmail.com</li>
 
-  <li><i class="bi bi-telephone-fill"></i> 849-623-7873</li>
+  <li><i className="bi bi-telephone-fill"></i> 849-623-7873</li>
   </div>
 
 

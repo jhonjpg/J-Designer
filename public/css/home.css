@@ -683,7 +683,7 @@ nav ul a {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: radial-gradient(rgb(135 38 157), #000);
+    background: radial-gradient(#38161a, #000);
     animation: CategotyOn 1.6s 1;
 }
 

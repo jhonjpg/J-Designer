@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Categorys from '../components/Categorys';
 import ContactForm from '../components/ContactForm';
+import Medical from '../categorys/Medical';
+import Media from '../categorys/Media';
+import Construction from '../categorys/Construction';
+import Laws from '../categorys/Laws';
+import Foods from '../categorys/Foods';
+import Beauty from '../categorys/Beauty';
+import Todos from '../categorys/Todos';
 
 
 const Portafolio = () => {
 
+  const [activeComponent, setActiveComponent] = useState("all");
 
+    function handleComponentClick(componentName) {
+      setActiveComponent(componentName);
+    }
 
 
   return (
@@ -24,27 +35,27 @@ const Portafolio = () => {
 
           <span  style={{ '--i': 2 }}>
 
-            <img src="https://images.pexels.com/photos/4705772/pexels-photo-4705772.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
+          <img src="./asssets/proyects/glamour.jpg" alt="" />
           </span>
           <span  style={{ '--i': 3 }} >
 
-            <img src="https://images.pexels.com/photos/13211066/pexels-photo-13211066.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
+          <img src="./asssets/proyects/kathPage.jpg" alt="" />
           </span>
 
 
           <span  style={{ '--i': 4 }}>
 
-            <img src="https://images.pexels.com/photos/3779191/pexels-photo-3779191.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
+          <img src="./asssets/proyects/gym.jpg" alt="" />
           </span>
 
 
           <span  style={{ '--i': 5 }}>
 
-            <img src="https://images.pexels.com/photos/16850073/pexels-photo-16850073/free-photo-of-mujer-pared-modelo-joven.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
+          <img src="./asssets/proyects/law.jpg" alt="" />
           </span>
           <span  style={{ '--i': 6 }}>
 
-            <img src="https://images.pexels.com/photos/14434715/pexels-photo-14434715.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
+          <img src="./asssets/proyects/dramelina.jpg" alt="" />
           </span>
 
         </div>
@@ -52,12 +63,54 @@ const Portafolio = () => {
 
 
       </div>
-{/* <div className="color">
-      <div class="violetCard">ff</div>
- */}
 
-      <Categorys/>
 
+      <section className="categorySection">
+
+
+
+<strong>PROYECTOS</strong>
+
+<div id="categorys">
+
+<ul>
+
+<li className="" onClick={() => handleComponentClick('all')}>Todo</li>
+
+<li className="" onClick={() => handleComponentClick('beauty')}>Belleza</li>
+
+
+<li className="" onClick={() => handleComponentClick('foods')}>Comida</li>
+
+<li className="" onClick={() => handleComponentClick('laws')}>Leyes</li>
+
+<li className="" onClick={() => handleComponentClick('medical')}>medical</li>
+
+<li className="" onClick={() => handleComponentClick('media')}>Entretenimiento</li>
+
+<li className="" onClick={() => handleComponentClick('construction')}>Construccion & Autos</li>
+
+
+</ul>
+
+</div>
+
+
+<div className="fullProyects">
+{activeComponent === 'all' && <Todos/>}
+
+{activeComponent === 'beauty' && <Beauty />}
+{activeComponent === 'construction' && <Construction />}
+{activeComponent === 'foods' && <Foods />}
+{activeComponent === 'laws' && <Laws />}
+{activeComponent === 'medical' && <Medical />}
+{activeComponent === 'media' && <Media />}
+
+</div>
+
+
+
+</section>
 
 <ContactForm/>
 </section>

@@ -16,33 +16,64 @@ const About = () => {
       <section id="about">
       <div className="aboutFront">
      
-     
-      <strong >SOBRE MI</strong>
 
-     
-     
-      
-      <Parallax
-      bgImage="../asssets/ilustracion/ilustration2.jpg"
+   
+
+     <div className="out">
+
+     <Parallax
+      className="codeAbout"
+      strength={1300}
       style={{
-        position: 'relative',
-       top:"-100px"
+        position: 'absolute',
+       top:"0px"
       }}
-      renderLayer={percentage => (
-        <div className=""
-          style={{
-            position: 'relative',
+     >
 
-            top: `${percentage * 100}%`, // Ajusta el desplazamiento hacia la derecha
-            width: percentage * 500,
-            height: percentage * 500,
-          }}
-        />
-      )}
-    >
+       <Background className="span">   { `<script type="module" src="/src/aboutme.jsx"></script>`}
+</Background>
+
 
 
     </Parallax>
+ 
+    <Parallax
+      className="codeAbout"
+      strength={1300}
+      style={{
+        position: 'absolute',
+       top:"0px"
+      }}
+     >
+
+
+
+<Background className="span2">   { `<script type="module" src="/src/aboutme.jsx"></script>`}
+</Background>
+
+
+    </Parallax>
+ 
+
+
+         <strong >SOBRE MI</strong>
+
+       <div className="aboutimg">
+
+         <img src="img/about/me.jpg" alt="" />
+
+
+       </div>
+
+
+         <p>Como desarrollador web, me especializo en el diseño y desarrollo de interfaces de usuario atractivas y funcionales. Con experiencia en HTML, CSS y JavaScript, me enfoco en crear sitios web responsivos y optimizados para ofrecer una experiencia de usuario excepcional</p>
+
+     <button className="know">Saber Mas</button>
+     
+      </div>
+
+      
+
 
 
    
@@ -67,7 +98,7 @@ const About = () => {
 
 
             <li >
-              <div className="d-flex justify-content-center w-100">
+              <div className="cartas">
                 <img src="./asssets/icons/pc.png" alt="" width="85px" />
               </div>
               <h3> 3 anos de experiencia </h3>

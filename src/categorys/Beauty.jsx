@@ -17,13 +17,13 @@ const Beauty = () => {
 
     <div className="proyects">
 
-      <img src="./asssets/proyects/beauty.jpg" alt="" />
+      <img src="./asssets/proyects/glamour.jpg" alt="" />
     
     </div>
 
     <div className="proyectSmall">
 
-    <img src="./asssets/proyects/beauty2.jpg" alt="" />
+    <img src="./asssets/proyects/glamour2.png" alt="" />
 
     </div>
 
