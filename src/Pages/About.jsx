@@ -21,22 +21,7 @@ const About = () => {
 
      <div className="out">
 
-     <Parallax
-      className="codeAbout"
-      strength={1300}
-      style={{
-        position: 'absolute',
-       top:"0px"
-      }}
-     >
-
-       <Background className="span">   { `<script type="module" src="/src/aboutme.jsx"></script>`}
-</Background>
-
-
-
-    </Parallax>
- 
+   
     <Parallax
       className="float"
       strength={-1600}
@@ -81,7 +66,6 @@ const About = () => {
 
 
 
-
     </Parallax>
  
  
@@ -114,7 +98,7 @@ const About = () => {
 
     <Parallax
       className="float4"
-      strength={-1000}
+      strength={-1300}
       style={{
         position: 'absolute',
        botom:"0px"
@@ -149,6 +133,65 @@ const About = () => {
 
     </Parallax>
  
+    <Parallax
+      className="float6"
+      strength={-950}
+      style={{
+        position: 'absolute',
+       botom:"0px"
+      }}
+     >
+
+
+
+
+<Background className="span6">  <img src="skills/tailwind.jpg" alt=""  />
+</Background>
+
+
+    </Parallax>
+ 
+ 
+
+
+    <Parallax
+      className="float7"
+      strength={-1120}
+      style={{
+        position: 'absolute',
+       botom:"0px"
+      }}
+     >
+
+
+
+
+<Background className="span7">  <img src="skills/nodejs.jpg" alt=""  />
+</Background>
+
+
+    </Parallax>
+ 
+ 
+
+
+    <Parallax
+      className="float8"
+      strength={-1150}
+      style={{
+        position: 'absolute',
+       botom:"0px"
+      }}
+     >
+
+
+
+
+<Background className="span8">  <img src="skills/github.jpg" alt=""  />
+</Background>
+
+
+    </Parallax>
  
  
     {/* <Parallax
@@ -197,30 +240,24 @@ const About = () => {
 
     
         <div className="aboutFrontDiv ">
-        <h5>POR QUE MUCHOS CLIENTES ELIGEN </h5>
 
 
-          <h6>JP DESIGNER  ?</h6>
+          <h1>JP DESIGNER  ?</h1>
 
           <br />
 
           <p className="me">Soy un diseñador y desarrollador de sitios web autodidacta con 3 años de experiencia. Durante esos 3 años, tomé y aprendí muchas plataformas y tecnologías que me permiten mantenerme alerta y por delante de mi competencia. Me esfuerzo por crear sitios web personalizados para cada cliente mientras les brindo el producto de la más alta calidad en el mercado.
           </p>
 
+          <p className="me">Contratará a una persona que le brindará un sitio web individualizado que cumpla con sus requisitos. Clientes en el pasado me han dicho que con mi ayuda han impulsado sus negocios a nuevas alturas y no podrían estar más felices.
+              </p>
+
 
           <ul className="experience">
 
 
-            <li >
-              <div className="cartas">
-                <img src="./asssets/icons/pc.png" alt="" width="85px" />
-              </div>
-              <h3> 3 anos de experiencia </h3>
-
-              <p>Contratará a una persona que le brindará un sitio web individualizado que cumpla con sus requisitos. Clientes en el pasado me han dicho que con mi ayuda han impulsado sus negocios a nuevas alturas y no podrían estar más felices.
-              </p>
-            </li>
-            <li >
+          
+            <li className="hability">
             
               <h3> Habilidades </h3>
 
@@ -253,18 +290,18 @@ const About = () => {
       
   
            <Parallax
-      bgImage="../asssets/ilustracion/ilustration2.jpg"
-      strength={822}
+      bgImage="https://cdn.pixabay.com/photo/2017/08/09/20/42/abstract-2615764_1280.jpg"
+      strength={422}
       style={{
         position: 'absolute',
-       top:"100px",
+       top:"120px",
       }}
       renderLayer={percentage => (
         <div
           style={{
             position: 'relative',
             left: `${percentage * 100}%`, // Ajusta el desplazamiento hacia la derecha
-            width: percentage * 500,
+            width: percentage * 700,
             height: percentage * 900,
           }}
         />
@@ -286,7 +323,11 @@ const About = () => {
       </section>
      
 
-    </>)
+    </>
+    
+    
+    
+    )
 }
 
 export default About
