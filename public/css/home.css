@@ -28,6 +28,7 @@ body {
 nav {
     position: fixed;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -116,7 +117,7 @@ nav ul a {
 
 .logo {
     transform: scale(0.8);
-    width: 30%;
+    width: 20%;
     height: 100%;
     background-image: url("../img/perslogo.jpg");
     background-repeat: no-repeat;

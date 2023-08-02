@@ -33,9 +33,8 @@ const About = () => {
 
 
 
-<Background className="span1">  <img src="skills/javascript.jpg" alt=""  />
+<Background className="span1">  <img src="skills/techno.jpg" alt=""  />
 </Background>
-
 
 
 
@@ -46,152 +45,8 @@ const About = () => {
 
 
 
-    <Parallax
-      className="float2"
-      strength={-1300}
-      style={{
-        position: 'absolute',
-       botom:"0px"
-      }}
-     >
 
 
-
-<Background className="span2">  <img src="skills/csss.jpg" alt=""  />
-</Background>
-
-
-
-
-
-
-
-    </Parallax>
- 
- 
-
-
-    <Parallax
-      className="float3"
-      strength={-1250}
-      style={{
-        position: 'absolute',
-       botom:"0px"
-      }}
-     >
-
-
-
-
-
-
-<Background className="span3">  <img src="skills/html.jpg" alt=""  />
-</Background>
-
-
-
-
-    </Parallax>
- 
- 
-
-
-    <Parallax
-      className="float4"
-      strength={-1300}
-      style={{
-        position: 'absolute',
-       botom:"0px"
-      }}
-     >
-
-
-
-<Background className="span4">  <img src="skills/reactjs.jpg" alt=""  />
-</Background>
-
-
-    </Parallax>
- 
-
-
-    <Parallax
-      className="float5"
-      strength={-850}
-      style={{
-        position: 'absolute',
-       botom:"0px"
-      }}
-     >
-
-
-
-
-<Background className="span5">  <img src="skills/boostrap.jpg" alt=""  />
-</Background>
-
-
-    </Parallax>
- 
-    <Parallax
-      className="float6"
-      strength={-950}
-      style={{
-        position: 'absolute',
-       botom:"0px"
-      }}
-     >
-
-
-
-
-<Background className="span6">  <img src="skills/tailwind.jpg" alt=""  />
-</Background>
-
-
-    </Parallax>
- 
- 
-
-
-    <Parallax
-      className="float7"
-      strength={-1120}
-      style={{
-        position: 'absolute',
-       botom:"0px"
-      }}
-     >
-
-
-
-
-<Background className="span7">  <img src="skills/nodejs.jpg" alt=""  />
-</Background>
-
-
-    </Parallax>
- 
- 
-
-
-    <Parallax
-      className="float8"
-      strength={-1150}
-      style={{
-        position: 'absolute',
-       botom:"0px"
-      }}
-     >
-
-
-
-
-<Background className="span8">  <img src="skills/github.jpg" alt=""  />
-</Background>
-
-
-    </Parallax>
  
  
     {/* <Parallax

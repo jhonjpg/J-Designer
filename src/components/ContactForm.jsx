@@ -19,7 +19,7 @@ const ContactForm = () => {
   
   return (
 
-
+<>
 
 <div  className="contactDiv" >
 
@@ -112,7 +112,7 @@ const ContactForm = () => {
 </div> 
 
 
-
+</>
 )
 }
 
