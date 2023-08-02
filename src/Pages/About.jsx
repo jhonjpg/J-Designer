@@ -133,7 +133,7 @@ const About = () => {
 
     </Parallax>
  
-    <Parallax
+    {/* <Parallax
       className="float6"
       strength={-950}
       style={{
@@ -192,7 +192,7 @@ const About = () => {
 
 
     </Parallax>
- 
+  */}
  
     {/* <Parallax
       className="float"
