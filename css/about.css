@@ -169,7 +169,6 @@
     color: #ccc;
     width: 30px;
     height: 30px;
-    animation: rotate 4s linear infinite;
 }
 
 .span2 {
@@ -179,7 +178,6 @@
     color: #ccc;
     width: 30px;
     height: 30px;
-    animation: rotate 4s linear infinite;
 }
 
 .span3 {
@@ -189,7 +187,6 @@
     color: #ccc;
     width: 30px;
     height: 30px;
-    animation: rotate 4s linear infinite;
 }
 
 .span4 {
@@ -199,7 +196,6 @@
     color: #ccc;
     width: 30px;
     height: 30px;
-    animation: rotate 4s linear infinite;
 }
 
 .span5 {
@@ -209,7 +205,6 @@
     color: #ccc;
     width: 30px;
     height: 30px;
-    animation: rotate 4s linear infinite;
 }
 
 .span6 {
@@ -219,7 +214,6 @@
     color: #ccc;
     width: 30px;
     height: 30px;
-    animation: rotate 4s linear infinite;
 }
 
 .span7 {
@@ -229,7 +223,6 @@
     color: #ccc;
     width: 30px;
     height: 30px;
-    animation: rotate 4s linear infinite;
 }
 
 .span8 {
@@ -239,7 +232,6 @@
     color: #ccc;
     width: 30px;
     height: 30px;
-    animation: rotate 4s linear infinite;
 }
 
 @keyframes rotate {
