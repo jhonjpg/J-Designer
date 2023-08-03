@@ -9,6 +9,11 @@ const Navbar = () => {
 
   const [toggleOn, settoggleOn] = useState(true)
 
+    // Estado para controlar el tema o color del proyecto
+    const [theme, setTheme] = useState(true);
+
+  
+
   useEffect(() => {
     settoggleOn(false); // Asegurarse de que el menú esté oculto al cargar la página
 
@@ -22,20 +27,45 @@ const Navbar = () => {
 
 
 
-const change = (e) => {
-  if (window.scrollY >= 200) {
+  const toggleTheme = () => {
 
-  setmenu(false)
-} else {
-  setmenu(true)
+    setTheme(!theme);
 
-}
+    const root = document.querySelector(':root');
+    if (theme) {
+      root.style.setProperty('--dark-color', 'rgb(1, 1, 1)');
+      root.style.setProperty('--social-media', 'white');
+      root.style.setProperty('--letter-dark', 'white');
+      root.style.setProperty('--shadow-color', 'rgba(25, 25, 25, 0.212)');
+      root.style.setProperty('--text-color', 'black');
 
-}
+    } else {
+      root.style.setProperty('--dark-color', 'rgb(230, 230, 230)');
+      root.style.setProperty('--social-media', 'rgb(29, 29, 29)');
+      root.style.setProperty('--letter-dark', 'rgb(31, 31, 31)');
+      root.style.setProperty('--shadow-color', 'rgba(235, 233, 233, 0.212)');
+      root.style.setProperty('--text-color', 'black');
 
-window.addEventListener("scroll", change)
+    }
+    
 
+    console.log(theme)
 
+  };
+
+  const change = (e) => {
+    if (window.scrollY >= 200) {
+  
+    setmenu(false)
+  } else {
+    setmenu(true)
+  
+  }
+  
+  }
+  
+  window.addEventListener("scroll", change)
+  
 
 
 const toggleMenu = () => {
@@ -70,16 +100,20 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 </div>
 
     <ul onClick={toggleMenu} className={toggle}>
-    <li className="nav-item" onClick={handleScroll}> <NavLink  exact to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/services" activeclassname="active"   >  Servicios</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/portafolio" activeclassname="active"   >  Portafolio</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink  exact to="/j-designer/about" activeclassname="active" >  Nosotros</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/contact" activeclassname="active"  >  Contacto</NavLink></li>
+    <li className="nav-item" onClick={handleScroll}> <NavLink  exact="true" to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink  to="/j-designer/services" activeclassname="active"   >  Servicios</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink  to="/j-designer/portafolio" activeclassname="active"   >  Portafolio</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink   to="/j-designer/about" activeclassname="active" >  Nosotros</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink  to="/j-designer/contact" activeclassname="active"  >  Contacto</NavLink></li>
 
 
+    
        </ul>
 
-     
+       {/* <label onClick={toggleTheme}  className="switch">
+    <input type="checkbox"/>
+    <span className="slider"></span>
+</label> */}
 
        <div className="logo"></div>
 
@@ -102,11 +136,12 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
 
     <ul className="">
-    <li className="nav-item" onClick={handleScroll}> <NavLink  exact to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/services" activeclassname="active"   >  Servicios</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/portafolio" activeclassname="active"   >  Portafolio</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink  exact to="/j-designer/about" activeclassname="active" >  Nosotros</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/contact" activeclassname="active"  >  Contacto</NavLink></li>
+    <li className="nav-item" onClick={handleScroll}> <NavLink  exact="true" to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink  to="/j-designer/services" activeclassname="active"   >  Servicios</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink  to="/j-designer/portafolio" activeclassname="active"   >  Portafolio</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink   to="/j-designer/about" activeclassname="active" >  Nosotros</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink  to="/j-designer/contact" activeclassname="active"  >  Contacto</NavLink></li>
+
 
        </ul>
 
