@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import SliderReview from '../components/SliderReview'
 import ContactForm from '../components/ContactForm';
@@ -8,7 +8,30 @@ import { Parallax, Background } from 'react-parallax';
 
 
 const About = () => {
+
+
+      
+  const [letra, setLetra] = useState("Quien Soy");
+
+
+
+  useEffect(() => {
+   
+    const interval = setInterval(() => {
+      setLetra(letra => {
+        const letras = ["JP DESIGNER ?","Quien Soy"]
+        const letraIndex = letras.indexOf(letra); // obtiene el indice de la letra actual
+        return letras[(letraIndex + 1) % letras.length]; // retorna la siguiente letra en el arreglo
+      });
+
+    }, 3000); // cambia cada 4 segundos
+
+    return () => clearInterval(interval); // limpiar el intervalo
+  }, []);
+
   return (
+
+    
     <>
 
       <Navbar />
@@ -78,7 +101,7 @@ const About = () => {
        </div>
 
 
-         <p>Como desarrollador web, me especializo en el diseño y desarrollo de interfaces de usuario atractivas y funcionales. Con experiencia en HTML, CSS y JavaScript, me enfoco en crear sitios web responsivos y optimizados para ofrecer una experiencia de usuario excepcional</p>
+         <p>Como desarrollador web, me especializo en el diseño y desarrollo de interfaces de usuario atractivas y funcionales. Con experiencia en React, javascript y muchas otras tecnologias, me enfoco en crear sitios web responsivos y optimizados para ofrecer una experiencia de usuario excepcional</p>
 
      <button className="know">Saber Mas</button>
      
@@ -97,7 +120,7 @@ const About = () => {
         <div className="aboutFrontDiv ">
 
 
-          <h1>JP DESIGNER  ?</h1>
+          <h1>   <span>{letra}</span> </h1>
 
           <br />
 
@@ -138,18 +161,17 @@ const About = () => {
 
 
 
-
+    
     
           <div className="w-100 d-flex flex-column align-items-center gap-5 position-relative overflow-hidden">
-           <pre className="fs-2"> Que Dicen Mis Clientes</pre>
-      
-  
-           <Parallax
+
+
+          <Parallax
       bgImage="https://cdn.pixabay.com/photo/2017/08/09/20/42/abstract-2615764_1280.jpg"
-      strength={422}
+      strength={452}
       style={{
         position: 'absolute',
-       top:"120px",
+       top:"-140px",
       }}
       renderLayer={percentage => (
         <div
@@ -165,6 +187,11 @@ const About = () => {
 
 
 </Parallax>
+
+           <pre className="fs-2 z-1"> Que Dicen Mis Clientes</pre>
+      
+  
+         
 <SliderReview/>
 
 

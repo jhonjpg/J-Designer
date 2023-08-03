@@ -12,27 +12,6 @@ const FrontPage = () => {
 
 
 
-      
-  const [letra, setLetra] = useState("EMAIL:jonathan050315jj@gmail.com");
-
-  const developer =   <div className="whatsapp"></div>
-
-
-  useEffect(() => {
-   
-    const interval = setInterval(() => {
-      setLetra(letra => {
-        const letras = ["849-623-7872", "jonathan050315jj@gmail.com", "www.linkedin.com/in/jonathan-peña-432582242"]; // arreglo con letras
-        const letraIndex = letras.indexOf(letra); // obtiene el indice de la letra actual
-        return letras[(letraIndex + 1) % letras.length]; // retorna la siguiente letra en el arreglo
-      });
-
-    }, 4000); // cambia cada 4 segundos
-
-    return () => clearInterval(interval); // limpiar el intervalo
-  }, []);
-
-
   return (
 <>
    
