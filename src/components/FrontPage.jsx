@@ -7,6 +7,15 @@ import Navbar from './Navbar';
 const FrontPage = () => {
 
   
+  const start = () => {
+    // Realizar el desplazamiento suave hasta 1000 píxeles desde la parte superior del documento.
+    window.scrollTo({
+      top: 600,
+      behavior: 'auto', // Esto agrega el efecto suave al desplazamiento
+    });
+  };
+
+
   
 
 
@@ -29,7 +38,7 @@ const FrontPage = () => {
 
     <p> Encargado de crear y mantener sitios web con habilidades en programación y diseño, así como un conocimiento profundo de lenguajes y tecnologías relacionadas con el desarrollo web</p>
     
-    <button>INICIAR</button>
+    <button onClick={start}>INICIAR</button>
     <div className="w-100 d-flex justify-content-center align-item-center flex-column ">
 
 

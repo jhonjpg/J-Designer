@@ -13,10 +13,15 @@
     --text-color: white;
 }
 
+html {
+    scroll-behavior: auto;
+    /* Cambia el comportamiento del scroll a "auto" para un desplazamiento instantáneo */
+}
+
 body {
     /* background-image: url("../img/bgportada.jpg"); */
     background-color: #000 !important;
-    scroll-behavior: auto;
+    scroll-behavior: initial;
 }
 
 .devices {

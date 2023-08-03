@@ -11,6 +11,13 @@ const Navbar = () => {
 
   useEffect(() => {
     settoggleOn(false); // Asegurarse de que el menú esté oculto al cargar la página
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto', // Esto agrega el efecto suave al desplazamiento
+    });
+
+
   }, []);
 
 
@@ -63,11 +70,11 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 </div>
 
     <ul onClick={toggleMenu} className={toggle}>
-    <li className="nav-item" onClick={handleScroll}> <NavLink exact="true" to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink to="/j-designer/services"  >  Servicios</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink to="/j-designer/portafolio"  >  Portafolio</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink to="/j-designer/about" >  Nosotros</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink to="/j-designer/contact" >  Contacto</NavLink></li>
+    <li className="nav-item" onClick={handleScroll}> <NavLink  exact to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/services" activeclassname="active"   >  Servicios</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/portafolio" activeclassname="active"   >  Portafolio</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink  exact to="/j-designer/about" activeclassname="active" >  Nosotros</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/contact" activeclassname="active"  >  Contacto</NavLink></li>
 
 
        </ul>
@@ -95,11 +102,11 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
 
     <ul className="">
-    <li className="nav-item"> <NavLink exact="true" to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
-         <li className="nav-item"> <NavLink to="/j-designer/services"  >  Servicios</NavLink></li>
-         <li className="nav-item"> <NavLink to="/j-designer/portafolio"  >  Portafolio</NavLink></li>
-         <li className="nav-item"> <NavLink to="/j-designer/about" >  Nosotros</NavLink></li>
-         <li className="nav-item"> <NavLink to="/j-designer/contact" >  Contacto</NavLink></li>
+    <li className="nav-item" onClick={handleScroll}> <NavLink  exact to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/services" activeclassname="active"   >  Servicios</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/portafolio" activeclassname="active"   >  Portafolio</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink  exact to="/j-designer/about" activeclassname="active" >  Nosotros</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink exact to="/j-designer/contact" activeclassname="active"  >  Contacto</NavLink></li>
 
        </ul>
 
