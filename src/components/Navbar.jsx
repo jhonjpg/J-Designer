@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 
 
@@ -7,8 +7,11 @@ const Navbar = () => {
 
   const [menu, setmenu] = useState(true);
 
-  const [toggleOn, settoggleOn] = useState(false)
+  const [toggleOn, settoggleOn] = useState(true)
 
+  useEffect(() => {
+    settoggleOn(false); // Asegurarse de que el menú esté oculto al cargar la página
+  }, []);
 
 
 
@@ -59,7 +62,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 {toggleOn ?  <i className="bi bi-x-lg"></i> : <i className="bi bi-list"></i>}
 </div>
 
-    <ul className={toggle}>
+    <ul onClick={toggleMenu} className={toggle}>
     <li className="nav-item" onClick={handleScroll}> <NavLink exact="true" to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
          <li className="nav-item" onClick={handleScroll}> <NavLink to="/j-designer/services"  >  Servicios</NavLink></li>
          <li className="nav-item" onClick={handleScroll}> <NavLink to="/j-designer/portafolio"  >  Portafolio</NavLink></li>
