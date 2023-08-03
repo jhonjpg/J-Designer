@@ -23,7 +23,7 @@ const Categorys = () => {
     
       if (isMobile) {
         // Valores para dispositivos móviles
-        if (window.scrollY <= 3200) {
+        if (window.scrollY <= 3500) {
           seteffectCateg(false);
         } else {
           seteffectCateg(true);
