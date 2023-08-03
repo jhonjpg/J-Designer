@@ -23,7 +23,7 @@ const Beauty = () => {
 
     <div className="proyectSmall">
 
-    <img src="./asssets/proyects/glamour2.png" alt="" />
+    <img src="./asssets/proyects/glamour2.jpg" alt="" />
 
     </div>
 

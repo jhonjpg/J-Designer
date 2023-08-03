@@ -75,7 +75,7 @@ body {
     }
     100% {
         opacity: 1;
-        height: 370px;
+        height: 100vh;
     }
 }
 
@@ -99,7 +99,7 @@ body {
 @keyframes closeMenu {
     0% {
         opacity: 1;
-        height: 370px;
+        height: 100vh;
     }
     100% {
         display: none;

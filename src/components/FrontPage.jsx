@@ -10,8 +10,6 @@ const FrontPage = () => {
   
 
 
-
-
   return (
 <>
    

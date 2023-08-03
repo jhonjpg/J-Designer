@@ -2,6 +2,8 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { Parallax } from 'react-parallax';
+
 
 
 const SliderReview = () => {
@@ -115,6 +117,31 @@ const SliderReview = () => {
 <>
 
 
+<Parallax
+      bgImage="https://cdn.pixabay.com/photo/2017/08/09/20/42/abstract-2615764_1280.jpg"
+      strength={452}
+      style={{
+        position: 'absolute',
+       top:"-140px",
+      }}
+      renderLayer={percentage => (
+        <div
+          style={{
+            position: 'relative',
+            left: `${percentage * 100}%`, // Ajusta el desplazamiento hacia la derecha
+            width: percentage * 700,
+            height: percentage * 900,
+          }}
+        />
+      )}
+    >
+
+
+</Parallax>
+
+           <pre className="fs-2 z-1"> Que Dicen Mis Clientes</pre>
+      
+  
 <ul  className="reviewSlide">
 
         <Slider {...settings}>

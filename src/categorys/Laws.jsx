@@ -19,7 +19,7 @@ const Laws = () => {
 
     <div className="proyectSmall">
 
-    <img src="./asssets/proyects/law2p.jpg" alt="" />
+    <img src="./asssets/proyects/law2.jpg" alt="" />
 
     </div>
 
