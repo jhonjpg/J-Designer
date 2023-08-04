@@ -30,30 +30,6 @@ export const AboutParallax = () => {
 
     </Parallax>
 
-
-
-
-
- 
- 
-    {/* <Parallax
-      className="float"
-      strength={-500}
-      style={{
-        position: 'absolute',
-       top:"0px"
-      }}
-     >
-
-
-<Background className="span2">  <img src="skills/css.jpg" alt=""  />
-</Background>
-
-
-    </Parallax>
-  */}
-
-
    
          <strong >SOBRE MI</strong>
 
