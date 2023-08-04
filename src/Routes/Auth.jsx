@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,7 +19,17 @@ const Contact = lazy(() => import('../Pages/Contact'));
 
 const Auth = () => {
 
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    // Simulate a longer loading time (e.g., 2 seconds)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 2000 milliseconds = 2 seconds
+
+    // Clear the timer when the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
 
   
 
@@ -29,7 +39,7 @@ const Auth = () => {
       <Navbar/>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/j-designer/" element={
+          <Route path="/j-designer/" element={loading ? (
           
           <Suspense fallback={    <div className="lazy"
     
@@ -40,12 +50,29 @@ const Auth = () => {
               
             />
           </div>
-      }>            <Home />
+      }>           <div className="lazy"
+    
+          >
+            <img
+              src="../img/perslogo.jpg"
+              alt="Imagen centrada"
+              
+            />
+          </div>
        </Suspense> 
+
+          ):(
+
+                 <Home />
+
+          )
       
         
         
         } />
+
+
+
           <Route path="/j-designer/services" element={
             <Suspense fallback={    <div className="lazy"
     
