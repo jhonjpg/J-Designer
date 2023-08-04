@@ -8,10 +8,11 @@ export const AboutParallax = () => {
 
     <div className="out">
 
-   
+  
+
     <Parallax
-      className="float"
-      strength={-1600}
+      className="floate"
+      strength={-2200}
       style={{
         position: 'absolute',
        botom:"0px"
@@ -20,8 +21,8 @@ export const AboutParallax = () => {
 
 
 
-<Background className="span1">  <img src="skills/techno.jpg" alt=""  />
-</Background>
+<Background className="span1"> 
+<img src="skills/techno.jpg" alt=""  /></Background>
 
 
 
@@ -29,6 +30,7 @@ export const AboutParallax = () => {
 
 
     </Parallax>
+
 
    
          <strong >SOBRE MI</strong>

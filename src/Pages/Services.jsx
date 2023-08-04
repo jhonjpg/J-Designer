@@ -39,12 +39,12 @@ const Services = () => {
 <div className="servicesFront">
 
 
-        <h2>Sevices</h2>
+        <h2>Services</h2>
 
 
     <Parallax
       className="float"
-      strength={-1600}
+      strength={-2200}
       style={{
         position: 'absolute',
        botom:"0px"
@@ -67,7 +67,7 @@ const Services = () => {
 
     <Parallax
       className="float"
-      strength={1600}
+      strength={2200}
       style={{
         position: 'absolute',
        botom:"0px"
@@ -93,7 +93,7 @@ const Services = () => {
 </div>
 
 
-<strong>Kind of Services</strong>
+<strong className="kindOf">Kind of Services</strong>
 
 <ul   className="servicesListServ">
 

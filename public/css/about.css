@@ -132,7 +132,7 @@
     object-fit: contain;
 }
 
-.float {
+.floate {
     position: relative;
     width: 100%;
     height: 1000px;
@@ -141,11 +141,12 @@
 
 .span1 {
     position: relative;
-    top: -2650px;
+    left: 0px;
+    top: 3250px;
     color: #ccc;
-    width: 370px;
-    height: 100%;
-    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
 }
 
 @keyframes rotate {
