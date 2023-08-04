@@ -45,7 +45,7 @@ const Auth = () => {
     
           >
             <img
-              src="../img/perslogo.jpg"
+              src="img/perslogo.jpg"
               alt="Imagen centrada"
               
             />
@@ -54,7 +54,7 @@ const Auth = () => {
     
           >
             <img
-              src="../img/perslogo.jpg"
+              src="img/perslogo.jpg"
               alt="Imagen centrada"
               
             />
@@ -78,7 +78,7 @@ const Auth = () => {
     
             >
               <img
-                src="../img/perslogo.jpg"
+                src="img/perslogo.jpg"
                 alt="Imagen centrada"
                 
               />
@@ -93,7 +93,7 @@ const Auth = () => {
     
     >
       <img
-        src="../img/perslogo.jpg"
+        src="img/perslogo.jpg"
         alt="Imagen centrada"
         
       />
@@ -108,7 +108,7 @@ const Auth = () => {
     
        >
          <img
-           src="../img/perslogo.jpg"
+           src="img/perslogo.jpg"
            alt="Imagen centrada"
            
          />
@@ -121,7 +121,7 @@ const Auth = () => {
     
     >
       <img
-        src="../img/perslogo.jpg"
+        src="img/perslogo.jpg"
         alt="Imagen centrada"
         
       />
