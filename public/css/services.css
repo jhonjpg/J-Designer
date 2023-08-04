@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1d1b5c;
 }
 
 .servicesFront {
@@ -12,11 +11,11 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url("../img/service/multicode.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: -800px 0px;
     background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(47%2c 47%2c 47%2c 1)'%3e%3c/rect%3e%3cpath d='M417.3 610C621.43 576.51 721.01 82.7 1051.71 78.82 1382.42 74.94 1522.76 234.46 1686.13 235.62' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M401.49 562.32C541.07 560.9 654.51 416.94 939.13 411.62 1223.76 406.3 1331.24 192.04 1476.78 187.62' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M579.62 592.22C738.85 582.38 827.47 300.36 1139.22 285.54 1450.98 270.72 1546.06 44.51 1698.83 39.14' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M565.77 661.36C666.15 643.53 607.22 412.69 873.45 393.68 1139.67 374.67 1321.02 130.66 1488.8 124.88' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M475.2 567.42C618.05 559.51 726.63 301.76 981.96 301.52 1237.28 301.28 1357.28 440.24 1488.71 441.52' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 .servicesFront strong {
@@ -46,11 +45,9 @@
     align-items: center;
     padding: 20px;
     gap: 10px;
-    background: linear-gradient( #1d1b5c, #131242);
 }
 
 #services ul li {
-    background: linear-gradient( #5d58e0, #131242);
     color: white;
 }
 

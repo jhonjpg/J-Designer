@@ -118,7 +118,7 @@ const SliderReview = () => {
 
 
 <Parallax
-      bgImage="https://cdn.pixabay.com/photo/2017/08/09/20/42/abstract-2615764_1280.jpg"
+      bgImage="img/about/eclipse.jpg"
       strength={452}
       style={{
         position: 'absolute',
