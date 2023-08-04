@@ -13,15 +13,9 @@
     --text-color: black;
 }
 
-html {
-    scroll-behavior: auto;
-    /* Cambia el comportamiento del scroll a "auto" para un desplazamiento instantáneo */
-}
-
 body {
     /* background-image: url("../img/bgportada.jpg"); */
     background-color: #000 !important;
-    scroll-behavior: initial;
 }
 
 .devices {
@@ -233,6 +227,23 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+.lazy {
+    position: 'fixed';
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(1, 1, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lazy img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
