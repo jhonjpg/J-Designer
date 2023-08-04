@@ -22,7 +22,6 @@ const Portafolio = () => {
 
   return (
     <>
-      <Navbar />
 
 <section className="portafolio">
 

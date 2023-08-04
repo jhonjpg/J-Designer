@@ -7,7 +7,6 @@ const Contact = () => {
   
   return (
 <>
-<Navbar/>
 <main >
 
 <div className="contact">
@@ -83,7 +82,7 @@ Respuesta: Además de los servicios de diseño digital, también ofrecemos servi
 
 <div className="carta2">
     <div className="d-flex justify-content-center w-100 p-3">
-    <img src="public/asssets/icons/call.png" alt="" width="70px"  />
+    <img src="asssets/icons/call.png" alt="" width="70px"  />
          </div>
          <h3 className="text-center text-white" > Free 15 Min Consultations</h3> 
    
@@ -99,7 +98,7 @@ Respuesta: Además de los servicios de diseño digital, también ofrecemos servi
 
 <div className="carta2">
     <div className="d-flex justify-content-center w-100 p-3">
-    <img src="public/asssets/icons/call.png" alt="" width="70px"  />
+    <img src="asssets/icons/call.png" alt="" width="70px"  />
              </div>
         <h3 className="text-center text-white"> Happy Customers</h3> 
       
@@ -117,7 +116,7 @@ Respuesta: Además de los servicios de diseño digital, también ofrecemos servi
 
 <div className="carta2">
     <div className="d-flex justify-content-center w-100 p-3">
-    <img src="public/asssets/icons/pc.png" alt="" width="85px"  />
+    <img src="asssets/icons/call.png" alt="" width="85px"  />
              </div>
         <h3 className="text-white">Fast Responses</h3> 
       

@@ -34,7 +34,6 @@ const About = () => {
     
     <>
 
-      <Navbar />
 
       <section id="about">
       <div className="aboutFront">

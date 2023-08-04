@@ -23,7 +23,6 @@ const FrontPage = () => {
 <>
    
   
-  <Navbar/>
 <div className="frontPage">
 
 

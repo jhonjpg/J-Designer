@@ -6,7 +6,6 @@ const Services = () => {
 
     <>
 
-<Navbar/>
 
 <section id="services">
 
