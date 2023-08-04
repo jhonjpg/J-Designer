@@ -49,6 +49,16 @@
     width: 70%;
     height: 30%;
     z-index: 6;
+    filter: grayscale(100);
+    transition: 1s;
+}
+
+.aboutimg:hover {
+    width: 70%;
+    height: 30%;
+    z-index: 6;
+    filter: grayscale(0);
+    transition: 1s;
 }
 
 .meparallax {
