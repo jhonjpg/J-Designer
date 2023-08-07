@@ -176,7 +176,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 55%;
+    width: 59%;
 }
 
 .generalInfo li {
@@ -307,13 +307,14 @@ form {
     font-size: 25px;
 }
 
-.login-box form a {
+.login-box form [type="submit"] {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
     font-size: 16px;
     text-decoration: none;
+    background-color: #000;
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
@@ -360,6 +361,8 @@ textarea {
     border-left: none;
     border-right: none;
     width: 100%;
+    resize: none;
+    padding: 20px;
 }
 
 .card {
