@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import i18n from '../18n';
+
+
 
 
 const Navbar = () => {
@@ -9,8 +13,7 @@ const Navbar = () => {
 
   const [toggleOn, settoggleOn] = useState(true)
 
-    // Estado para controlar el tema o color del proyecto
-    const [theme, setTheme] = useState(true);
+    const [currentLanguage, setCurrentLanguage] = useState('es');
 
   
 
@@ -26,32 +29,6 @@ const Navbar = () => {
   }, []);
 
 
-
-  const toggleTheme = () => {
-
-    setTheme(!theme);
-
-    const root = document.querySelector(':root');
-    if (theme) {
-      root.style.setProperty('--dark-color', 'rgb(1, 1, 1)');
-      root.style.setProperty('--social-media', 'white');
-      root.style.setProperty('--letter-dark', 'white');
-      root.style.setProperty('--shadow-color', 'rgba(25, 25, 25, 0.212)');
-      root.style.setProperty('--text-color', 'black');
-
-    } else {
-      root.style.setProperty('--dark-color', 'rgb(230, 230, 230)');
-      root.style.setProperty('--social-media', 'rgb(29, 29, 29)');
-      root.style.setProperty('--letter-dark', 'rgb(31, 31, 31)');
-      root.style.setProperty('--shadow-color', 'rgba(235, 233, 233, 0.212)');
-      root.style.setProperty('--text-color', 'black');
-
-    }
-    
-
-    console.log(theme)
-
-  };
 
   const change = (e) => {
     if (window.scrollY >= 200) {
@@ -74,6 +51,23 @@ const toggleMenu = () => {
 
 }
 
+const { t } = useTranslation();
+
+   // Función para cambiar el idioma
+   const changeToEnglish = () => {
+    i18n.changeLanguage('en');
+    setCurrentLanguage('en');
+  };
+
+
+  const changeToSpanish = () => {
+    i18n.changeLanguage('es');
+    setCurrentLanguage('es');
+  };
+
+  const buttonText = currentLanguage === 'es' ? 'English' : ' Español';
+
+
 
 
 
@@ -92,14 +86,17 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 </div>
 
     <ul onClick={toggleMenu} className={toggle}>
-    <li className="nav-item" > <NavLink  exact="true" to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
-         <li className="nav-item" > <NavLink  to="/j-designer/services" activeclassname="active"   >  Servicios</NavLink></li>
-         <li className="nav-item" > <NavLink  to="/j-designer/portafolio" activeclassname="active"   >  Portafolio</NavLink></li>
-         <li className="nav-item" > <NavLink   to="/j-designer/about" activeclassname="active" >  Nosotros</NavLink></li>
-         <li className="nav-item" > <NavLink  to="/j-designer/contact" activeclassname="active"  >  Contacto</NavLink></li>
+    <li className="nav-item" > <NavLink  exact="true" to="/j-designer/" activeclassname="active" >  {t('home')}</NavLink></li>
+         <li className="nav-item" > <NavLink  to="/j-designer/services" activeclassname="active"   >  {t('services')}</NavLink></li>
+         <li className="nav-item" > <NavLink  to="/j-designer/portafolio" activeclassname="active"   >  {t('portfolio')}</NavLink></li>
+         <li className="nav-item" > <NavLink   to="/j-designer/about" activeclassname="active" >  {t('about')}</NavLink></li>
+         <li className="nav-item" > <NavLink  to="/j-designer/contact" activeclassname="active"  >  {t('contact')}</NavLink></li>
 
 
-    
+         <button onClick={currentLanguage === 'es' ? changeToEnglish : changeToSpanish}>
+
+            {buttonText}
+          </button>
        </ul>
 
        {/* <label onClick={toggleTheme}  className="switch">
@@ -125,14 +122,18 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
 <div className="logo"></div>
 
+<button onClick={currentLanguage === 'es' ? changeToEnglish : changeToSpanish}>
+Idioma:
 
+            {buttonText}
+          </button>
 
     <ul className="">
-    <li className="nav-item" > <NavLink  exact="true" to="/j-designer/" activeclassname="active" >  Home</NavLink></li>
-         <li className="nav-item" > <NavLink  to="/j-designer/services" activeclassname="active"   >  Servicios</NavLink></li>
-         <li className="nav-item" > <NavLink  to="/j-designer/portafolio" activeclassname="active"   >  Portafolio</NavLink></li>
-         <li className="nav-item" > <NavLink   to="/j-designer/about" activeclassname="active" >  Nosotros</NavLink></li>
-         <li className="nav-item" > <NavLink  to="/j-designer/contact" activeclassname="active"  >  Contacto</NavLink></li>
+    <li className="nav-item" > <NavLink  exact="true" to="/j-designer/" activeclassname="active" >  {t('home')}</NavLink></li>
+         <li className="nav-item" > <NavLink  to="/j-designer/services" activeclassname="active"   >  {t('services')}</NavLink></li>
+         <li className="nav-item" > <NavLink  to="/j-designer/portafolio" activeclassname="active"   >  {t('portfolio')}</NavLink></li>
+         <li className="nav-item" > <NavLink   to="/j-designer/about" activeclassname="active" >  {t('about')}</NavLink></li>
+         <li className="nav-item" > <NavLink  to="/j-designer/contact" activeclassname="active"  >  {t('contact')}</NavLink></li>
 
 
        </ul>

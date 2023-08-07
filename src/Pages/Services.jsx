@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import { Parallax, Background } from 'react-parallax';
 import ContactForm from '../components/ContactForm';
+import { useTranslation } from 'react-i18next'; // Importamos useTranslation
+
 
 
 const Services = () => {
+
+  const { t } = useTranslation(); // Obtenemos la función t() para traducir
 
 
 
@@ -39,7 +43,8 @@ const Services = () => {
 <div className="servicesFront">
 
 
-        <h2>Services</h2>
+
+        <h2>{t('services')}</h2>
 
 
     <Parallax
@@ -93,7 +98,7 @@ const Services = () => {
 </div>
 
 
-<strong className="kindOf">Kind of Services</strong>
+<strong className="kindOf">Tipo de Servicios</strong>
 
 <ul   className="servicesListServ">
 

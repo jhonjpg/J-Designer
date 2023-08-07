@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar'
 import SliderReview from '../components/SliderReview'
 import ContactForm from '../components/ContactForm';
 import { AboutParallax } from '../helpers/AboutParallax';
+import { useTranslation } from 'react-i18next'; // Importamos useTranslation
+
 
 
 
@@ -10,8 +12,20 @@ import { AboutParallax } from '../helpers/AboutParallax';
 const About = () => {
 
 
+  const { t } = useTranslation(); // Obtenemos la función t() para traducir
+
       
   const [letra, setLetra] = useState("Quien Soy");
+
+  const [isDescriptionA, setisDescriptionA] = useState(false);
+
+
+  const handleDescriptionToggleA = () => {
+    setisDescriptionA(!isDescriptionA);
+  };
+
+
+
 
 
 
@@ -19,7 +33,7 @@ const About = () => {
    
     const interval = setInterval(() => {
       setLetra(letra => {
-        const letras = ["JP DESIGNER ?","Quien Soy"]
+        const letras = [t('aboutMe.heading'), 'JP Designer'];
         const letraIndex = letras.indexOf(letra); // obtiene el indice de la letra actual
         return letras[(letraIndex + 1) % letras.length]; // retorna la siguiente letra en el arreglo
       });
@@ -48,17 +62,36 @@ const About = () => {
     
         <div className="aboutFrontDiv ">
 
-
+    
+    <div className="separate">
           <h1>   <span>{letra}</span> </h1>
 
           <br />
 
-          <p className="me">Soy un diseñador y desarrollador de sitios web autodidacta con 3 años de experiencia. Durante esos 3 años, tomé y aprendí muchas plataformas y tecnologías que me permiten mantenerme alerta y por delante de mi competencia. Me esfuerzo por crear sitios web personalizados para cada cliente mientras les brindo el producto de la más alta calidad en el mercado.
-          </p>
+         
+          <p className="me">{t('aboutMe.description1')}</p>
 
-          <p className="me">Contratará a una persona que le brindará un sitio web individualizado que cumpla con sus requisitos. Clientes en el pasado me han dicho que con mi ayuda han impulsado sus negocios a nuevas alturas y no podrían estar más felices.
-              </p>
+<p className="me">{t('aboutMe.description2')}</p>
 
+<p>{t('aboutMe.description3')}</p>
+
+<button className="mb-3 p-2 " onClick={handleDescriptionToggleA}>
+              {isDescriptionA
+                ? t('aboutMe.toggleButtonShowLess')
+                : t('aboutMe.toggleButtonShowMore')}
+            </button>
+              {isDescriptionA && (
+
+                
+                <div className="description">
+
+<p>{t('aboutMe.additionalDescription1')}</p>
+                <p>{t('aboutMe.additionalDescription2')}</p>
+                 
+                </div>
+              )}
+
+              </div>
 
           <ul className="experience">
 
@@ -66,7 +99,7 @@ const About = () => {
           
             <li className="hability">
             
-              <h3> Habilidades </h3>
+            <h3>{t('aboutMe.skillsHeading')}</h3>
 
               <span>HTML <div className=""> <img src="skills/html.jpg" alt="" /></div></span>
               <span>CSS <div className=""><img src="skills/csss.jpg" alt="" /></div></span>

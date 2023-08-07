@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import { Parallax } from 'react-parallax';
-import Navbar from './Navbar';
+import React from 'react'
+import { useTranslation } from 'react-i18next'; // Importamos useTranslation
+
 
 
 
 const FrontPage = () => {
 
-  
+  const { t } = useTranslation(); // Obtenemos la función t() para traducir
+
   const start = () => {
     // Realizar el desplazamiento suave hasta 1000 píxeles desde la parte superior del documento.
     window.scrollTo({
@@ -31,13 +32,10 @@ const FrontPage = () => {
 
 
   
-    <h2 >DESARROLLADOR WEB</h2>
-
-    <h1>JP DESIGNER </h1> 
-
-    <p> Encargado de crear y mantener sitios web con habilidades en programación y diseño, así como un conocimiento profundo de lenguajes y tecnologías relacionadas con el desarrollo web</p>
-    
-    <button onClick={start}>INICIAR</button>
+<h2>{t('desarrolladorWeb')}</h2>
+          <h1>{t('jpDesigner')}</h1>
+          <p>{t('descripcion')}</p>
+          <button onClick={start}>{t('iniciar')}</button>
     <div className="w-100 d-flex justify-content-center align-item-center flex-column ">
 
 

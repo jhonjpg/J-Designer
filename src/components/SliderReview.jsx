@@ -3,10 +3,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { Parallax } from 'react-parallax';
+import { useTranslation } from 'react-i18next'; // Importamos useTranslation
+
 
 
 
 const SliderReview = () => {
+
+    const { t } = useTranslation(); // Obtenemos la función t() para traducir
+
 
     const settings = {
         dots: false,
@@ -119,7 +124,7 @@ const SliderReview = () => {
 
 <Parallax
       bgImage="img/about/eclipse.jpg"
-      strength={452}
+      strength={1052}
       style={{
         position: 'absolute',
        top:"-140px",
@@ -129,7 +134,7 @@ const SliderReview = () => {
           style={{
             position: 'relative',
             left: `${percentage * 100}%`, // Ajusta el desplazamiento hacia la derecha
-            width: percentage * 700,
+            width: percentage * 1800,
             height: percentage * 900,
           }}
         />
@@ -139,7 +144,7 @@ const SliderReview = () => {
 
 </Parallax>
 
-           <pre className="fs-2 z-1"> Que Dicen Mis Clientes</pre>
+           <pre className="fs-2 z-1"> {t('myclient')}</pre>
       
   
 <ul  className="reviewSlide">
@@ -160,7 +165,7 @@ const SliderReview = () => {
 
 <div className="two">
 
-<p>{immg[0].resenas[index]}</p>
+<p>{t('reviewSlide.' + index + '.review')}</p>
      </div>
 
      </li>

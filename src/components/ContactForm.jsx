@@ -1,11 +1,17 @@
 import React from 'react'
 import { InView } from 'react-intersection-observer';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next'; // Importamos useTranslation
+
 
 
 
 
 const ContactForm = () => {
+
+
+  const { t } = useTranslation(); // Obtenemos la función t() para traducir
+
 
     const { ref, inView, entry } = useInView({
       /* Optional options */
@@ -30,15 +36,15 @@ const ContactForm = () => {
 
 <div className="violetCard"></div>
 
+<strong ref={ref} className={inView ? 'contactame' : ''}>{t('contactDiv.contactMe')}</strong>
 
-<strong ref={ref} className={inView ? 'contactame' : ''}>CONTACTAME</strong>
 
 <div className="containerboth">
 <ul className="generalInfo">
 
 <div className="emailTel">
 
- <p className="text-light fs-5 text-center">Contacto</p> 
+<p className="text-light fs-5 text-center">{t('contactDiv.contactInfo')}</p>
 <li><i className="bi bi-envelope-at-fill"></i> jonathan050315jj@gmail.com</li>
 
   <li><i className="bi bi-telephone-fill"></i> 849-623-7873</li>
@@ -64,7 +70,7 @@ const ContactForm = () => {
 </div>   
 
 
-<button onClick={handleDownloadCV}>Descargar Cv</button>
+<button onClick={handleDownloadCV}>{t('contactDiv.downloadCV')}</button>
 
 </ul>
 
@@ -84,23 +90,29 @@ const ContactForm = () => {
 
   <div className="login-box">
  
- <form>
-   <div className="user-box">
-     <input type="text" name="" required="" placeholder="Nombre"/>
-   </div>
-   <div className="user-box">
-     <input type="password" name="" required="" placeholder="Email"/>
+  <form action="https://formsubmit.co/6c3bc50ed13db84e1fe2f0325dda5e61" method="POST">
+                  <div className="user-box">
+                    <input type="text" name="name" required="" placeholder={t('contactDiv.name')} />
+                  </div>
+                  <div className="user-box">
+                    <input type="email" name="email" required="" placeholder={t('contactDiv.email')} />
+                    <div className="user-box">
+                      <input type="tel" name="phone" required="" placeholder={t('contactDiv.phone')} />
+                    </div>
+                    <textarea name="mensage" id="" cols="33" rows="4" placeholder={t('contactDiv.message')} required></textarea>
 
-     <div className="user-box">
-     <input type="tel" name="" required="" placeholder="Telefono"/>
-   </div>
 
-<textarea name="" id="" cols="33" rows="4" placeholder="Message"></textarea>     
    </div><center>
    <a href="#">
-          SEND
+   <input type="submit" value={t('contactDiv.submit')} />
       <span></span>
    </a></center>
+
+
+   <input type="hidden" name="_next" value="http://localhost:5173/j-designer/" />
+   <input type="hidden" name="_captcha" value="false" />
+
+
  </form>
 
 

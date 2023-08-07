@@ -1,13 +1,20 @@
 import React, { useState } from 'react'
 import Medical from '../categorys/Medical';
 import Media from '../categorys/Media';
-import Construction from '../categorys/Construction';
 import Laws from '../categorys/Laws';
 import Foods from '../categorys/Foods';
 import Beauty from '../categorys/Beauty';
 import Todos from '../categorys/Todos';
+import { InView } from 'react-intersection-observer';
+
+import { useTranslation } from 'react-i18next'; // Importamos useTranslation
+
 
 const Categorys = () => {
+
+
+  const { t } = useTranslation(); // Obtener la función t() para traducir
+
     const [activeComponent, setActiveComponent] = useState("all");
 
     function handleComponentClick(componentName) {
@@ -53,38 +60,43 @@ const Categorys = () => {
 <div  className="strng" >  &lt;/&gt;
  </div>
 
-<strong>PROYECTOS</strong>
+<strong>{t("projects")}</strong>
 
 <div id="categorys">
-
 <ul>
+            <li className="" onClick={() => handleComponentClick('all')}>
+              {t('categories.all')}
+            </li>
+            <li className="" onClick={() => handleComponentClick('beauty')}>
+              {t('categories.beauty')}
+            </li>
+            <li className="" onClick={() => handleComponentClick('foods')}>
+              {t('categories.foods')}
+            </li>
+            <li className="" onClick={() => handleComponentClick('laws')}>
+              {t('categories.laws')}
+            </li>
+            <li className="" onClick={() => handleComponentClick('medical')}>
+              {t('categories.medical')}
+            </li>
+            <li className="" onClick={() => handleComponentClick('media')}>
+              {t('categories.media')}
+            </li>
+       
+          </ul>
 
-<li className="" onClick={() => handleComponentClick('all')}>Todo</li>
-
-<li className="" onClick={() => handleComponentClick('beauty')}>Belleza</li>
-
-
-<li className="" onClick={() => handleComponentClick('foods')}>Comida</li>
-
-<li className="" onClick={() => handleComponentClick('laws')}>Leyes</li>
-
-<li className="" onClick={() => handleComponentClick('medical')}>medical</li>
-
-<li className="" onClick={() => handleComponentClick('media')}>Entretenimiento</li>
-
-<li className="" onClick={() => handleComponentClick('construction')}>Construccion & Autos</li>
-
-
-</ul>
 
 </div>
 
 
-<div className="fullProyects">
+
+<InView triggerOnce="false" >
+            {({ inView, ref, entry }) => (
+
+<div ref={ref} className={inView ? 'fullProyects' : ''}>
 {activeComponent === 'all' && <Todos/>}
 
 {activeComponent === 'beauty' && <Beauty />}
-{activeComponent === 'construction' && <Construction />}
 {activeComponent === 'foods' && <Foods />}
 {activeComponent === 'laws' && <Laws />}
 {activeComponent === 'medical' && <Medical />}
@@ -92,6 +104,8 @@ const Categorys = () => {
 
 </div>
 
+)}
+</InView>
 
 
 </section>

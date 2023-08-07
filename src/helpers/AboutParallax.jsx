@@ -1,8 +1,21 @@
 import React from 'react'
 import { Parallax, Background } from 'react-parallax';
+import { useTranslation } from 'react-i18next'; // Importamos useTranslation
 
 
 export const AboutParallax = () => {
+
+  const { t } = useTranslation(); // Obtenemos la función t() para traducir
+
+  const start = () => {
+    // Realizar el desplazamiento suave hasta 1000 píxeles desde la parte superior del documento.
+    window.scrollTo({
+      top: 600,
+      behavior: 'auto', // Esto agrega el efecto suave al desplazamiento
+    });
+  };
+
+  
   return (
 
 
@@ -33,7 +46,7 @@ export const AboutParallax = () => {
 
 
    
-         <strong >SOBRE MI</strong>
+         <strong >{t('aboutMe.about')}</strong>
 
        <div className="aboutimg">
 
@@ -43,9 +56,9 @@ export const AboutParallax = () => {
        </div>
 
 
-         <p>Como desarrollador web, me especializo en el diseño y desarrollo de interfaces de usuario atractivas y funcionales. Con experiencia en React, javascript y muchas otras tecnologias, me enfoco en crear sitios web responsivos y optimizados para ofrecer una experiencia de usuario excepcional</p>
+       <p>{t('aboutMe.description0')}</p>
 
-     <button className="know">Saber Mas</button>
+     <button onClick={start} className="know">{t('aboutMe.toggleButtonKnowMore')}</button>
      
       </div>
 

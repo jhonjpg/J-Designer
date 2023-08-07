@@ -10,7 +10,7 @@ import ContactForm from '../components/ContactForm';
 
 const Home = () => {
 
-  
+
 
   return (
       
