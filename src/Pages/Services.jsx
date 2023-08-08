@@ -257,13 +257,13 @@ const Services = () => {
 
 
 
-<ContactForm/>
-
 
 
 
 </section>
 
+
+<ContactForm/>
 
 
 </>    

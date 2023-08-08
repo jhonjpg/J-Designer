@@ -4,6 +4,8 @@ import SliderReview from '../components/SliderReview'
 import ContactForm from '../components/ContactForm';
 import { AboutParallax } from '../helpers/AboutParallax';
 import { useTranslation } from 'react-i18next'; // Importamos useTranslation
+import { InView } from 'react-intersection-observer';
+
 
 
 
@@ -126,8 +128,9 @@ const About = () => {
 
 
     
-    
-          <div className="w-100 d-flex flex-column align-items-center gap-5 position-relative overflow-hidden">
+          <InView  >
+            {({ inView, ref, entry }) => (
+          <div ref={ref} className={inView ? 'reviewDiv' : 'reviewDivoff'}>
 
 
          
@@ -135,6 +138,9 @@ const About = () => {
 
 
 </div>
+
+)}
+</InView>
 <ContactForm/>
 
         </div>

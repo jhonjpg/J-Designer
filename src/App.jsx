@@ -7,10 +7,10 @@ function App() {
 
   return (
     <>
-      <div>
+      <main>
      
      <Auth/>
-      </div>
+      </main>
    
     </>
   )

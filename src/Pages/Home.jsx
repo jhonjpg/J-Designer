@@ -18,7 +18,6 @@ const Home = () => {
 <>
 
 
-<main>
 
                                   {/* frontPage */}
 <FrontPage/>
@@ -31,7 +30,6 @@ const Home = () => {
                                     {/* contact */}
 
 <ContactForm/>
-</main>
 
     </>
   )

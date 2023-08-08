@@ -75,7 +75,7 @@ const Contact = () => {
 
 <div className="carta2">
     <div className="d-flex justify-content-center w-100 p-3">
-    <img src="/img/contact/client.png" alt="" width="70px"  />
+    <img src="img/contact/client.png" alt="" width="70px"  />
              </div>
         <h3 className="text-center text-white">   {t('contactPage.questions.question2.title')}
 </h3> 

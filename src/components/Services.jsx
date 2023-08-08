@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { InView } from 'react-intersection-observer';
 import { Parallax, Background } from 'react-parallax';
 import { useTranslation } from 'react-i18next'; // Importamos useTranslation
+import { Link } from 'react-router-dom';
 // import es from './18next/es.json';
 
 
@@ -79,14 +80,13 @@ const Services = () => {
                       {t(point)} <i className="bi bi-check2"></i>
                     </p>
                   ))}
-                  {service.buttonText && <button>{t(service.buttonText)}</button>}
+                  {service.buttonText && <Link className="btnS" to="/j-designer/services">{t(service.buttonText)}</Link>}
                 </div>
               </li>
             )}
           </InView>
         ))}
       </ul>
-
 
 {/* 
                <ul   className="servicesListDevice">

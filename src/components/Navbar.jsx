@@ -70,7 +70,7 @@ const buttonImageSpanish = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAA
 
 
 
-  const buttonImage = currentLanguage === 'es' ? buttonImageEnglish : buttonImageSpanish;
+  const buttonImage = currentLanguage === 'es' ? buttonImageSpanish  : buttonImageEnglish;
 
 
 
