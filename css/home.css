@@ -427,7 +427,7 @@ input:checked+.slider:before {
 }
 
 .containerTwo:hover {
-    background-color: #00acee;
+    background-color: #272727;
     transition-duration: .3s;
 }
 
@@ -701,13 +701,15 @@ input:checked+.slider:before {
     color: white;
 }
 
-.serviceH .cartas button {
+.serviceH .cartas .btnS {
     width: 40%;
     border-radius: 5px;
     background-color: #575656;
     border: none;
     color: white;
     margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .serviceH li p {
