@@ -142,6 +142,23 @@ nav ul li {
     padding-bottom: 16px;
 }
 
+.nav button {
+    position: relative;
+    display: flex;
+    width: 20%;
+    height: 15%;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    align-self: center;
+}
+
+.nav button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .nav .active {
     border-bottom: 2px solid rgb(209, 69, 69);
     color: rgb(209, 69, 69);
@@ -947,6 +964,7 @@ input:checked+.slider:before {
     justify-content: center;
     align-items: center;
     min-width: 390px;
+    cursor: pointer;
 }
 
 @keyframes fff {
