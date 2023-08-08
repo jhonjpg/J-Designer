@@ -171,6 +171,52 @@
          {
              "review": "JP Designer stood out for their creativity and ability to adapt to our specific needs. Very happy with the final result!"
          }
-     ]
+     ],
+
+
+     "servicesPage": {
+         "icon": "bi bi-activity",
+         "title": "Search Engine Optimization (SEO)",
+         "description": "Help improve website positioning on search engines through SEO practices and content optimization.",
+         "points": "Boost Google ranking",
+         "points2": "Organic traffic growth",
+         "points3": "Page speed optimization"
+     },
+     "servicesPage2": {
+         "icon": "bi bi-crop",
+         "title": "UI/UX Design",
+         "description": "Design and develop powerful and modern websites for all types of businesses.",
+         "points4": "Desktop Design",
+         "points5": "Phone Design",
+         "points6": "Tablet Design"
+     },
+     "servicesPage3": {
+         "icon": "bi bi-arrow-clockwise",
+         "title": "Website Maintenance and Updates",
+         "description": "Offer maintenance and periodic update services to ensure websites are always up-to-date and functioning properly.",
+         "points7": "Desktop Design",
+         "points8": "Phone Design",
+         "points9": "Tablet Design"
+     },
+     "webDesign": "Web Design and Development",
+     "KindOf": "Kind of Services",
+     "seoOptimization": "Search Engine Optimization (SEO)",
+     "responsiveDesign": "Responsive Design",
+     "uiuxDesign": "UI/UX Design",
+     "consulting": "Consulting and Advisory",
+     "maintenance": "Website Maintenance and Updates",
+     "readMore": "Read More",
+     "readLess": "Read Less",
+     "designWeb": "As a web designer, I am a highly creative and versatile professional who combines skills in graphic design, programming, and usability to conceptualize, plan, and build visually captivating, intuitive, and effective websites that meet the unique needs and goals of your clients, providing an exceptional user experience and a impactful online presence. Your ability to merge aesthetics, functionality, and technology enables you to translate ideas into coherent and attractive digital interfaces, employing a variety of programming languages and tools, and always staying updated on the latest trends and advancements in web design and development to deliver innovative solutions that drive success in the digital world.",
+     "seoDescription": "Help improve website positioning on search engines through SEO practices and content optimization. Boost Google ranking. Page speed optimization.",
+     "speedOptimization": "Page Speed Optimization",
+     "responsiveDesignDesc": "As a specialized web designer in responsive design, your work stands out for your ability to create websites that perfectly adapt to different devices and screen sizes. Your focus on user experience has allowed you to design intuitive and visually appealing interfaces that ensure smooth navigation and comfortable interaction on desktop computers, tablets, and mobile phones.",
+     "uiuxDesignDesc": "We design and develop powerful and modern websites for all types of businesses. Desktop design, phone design, and tablet design.",
+     "consultingDescription": "As a website consultant and advisor, your work stands out for providing expert and strategic guidance to your clients, helping them maximize the potential of their websites and achieve significant results in the digital world. Your focus goes beyond design and development, as you delve into understanding each client's unique needs and goals to offer personalized solutions that enhance their online presence.",
+     "componentTranslation": "This is a component translated using useTranslation.",
+     "buttonTextReadMore": "Read More",
+     "buttonTextReadLess": "Read Less"
+
+
 
  }

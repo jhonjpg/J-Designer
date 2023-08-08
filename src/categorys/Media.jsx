@@ -8,7 +8,7 @@ const Media = () => {
     threshold: 0,
   });
   return (
-<div   className="containerProyects">
+<a className="containerProyects" href="https://jhonjpg.github.io/lyftgym/" target="_blank">
     <div className="proyects">
 
       <img src="./asssets/proyects/gym.jpg" alt="" />
@@ -21,7 +21,8 @@ const Media = () => {
 
     </div>
 
-    </div>
+    </a>
+
   )
 }
 

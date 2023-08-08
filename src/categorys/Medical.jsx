@@ -10,8 +10,8 @@ const Medical = () => {
   });
 
   return (
-<div   className="containerProyects">
-    <div className="proyects">
+<a className="containerProyects" href="https://jhonjpg.github.io/DraMelina//
+" target="_blank">    <div className="proyects">
 
     <img src="./asssets/proyects/dramelina.jpg" alt="" />
     
@@ -23,7 +23,8 @@ const Medical = () => {
 
     </div>
 
-    </div>  )
+    </a>  )
 }
+
 
 export default Medical

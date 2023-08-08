@@ -75,21 +75,23 @@ const About = () => {
 
 <p>{t('aboutMe.description3')}</p>
 
-<button className="mb-3 p-2 " onClick={handleDescriptionToggleA}>
-              {isDescriptionA
-                ? t('aboutMe.toggleButtonShowLess')
-                : t('aboutMe.toggleButtonShowMore')}
-            </button>
               {isDescriptionA && (
 
                 
                 <div className="description">
 
-<p>{t('aboutMe.additionalDescription1')}</p>
+<p>{t('aboutMe.additionalDescription1')}</p> 
                 <p>{t('aboutMe.additionalDescription2')}</p>
                  
                 </div>
               )}
+
+
+<button className="mb-3 p-2 " onClick={handleDescriptionToggleA}>
+              {isDescriptionA
+                ? t('aboutMe.toggleButtonShowLess')
+                : t('aboutMe.toggleButtonShowMore')}
+            </button>
 
               </div>
 

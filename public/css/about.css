@@ -498,8 +498,12 @@ pre {
 }
 
 .two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 50%;
+    text-align: start;
 }
 
 .two p {
@@ -508,5 +512,5 @@ pre {
     font-size: 17px;
     color: black;
     padding: 10px !important;
-    text-align: justify;
+    text-align: center !important;
 }

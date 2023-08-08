@@ -4,13 +4,12 @@ import { useInView } from 'react-intersection-observer';
 
 const Laws = () => {
 
-
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0,
   });
   return (
-<div   className="containerProyects">
+<a className="containerProyects" href="https://jhonjpg.github.io/abogada/"  target="_blank">
     <div className="proyects">
 
       <img src="./asssets/proyects/law.jpg" alt="" />
@@ -23,7 +22,7 @@ const Laws = () => {
 
     </div>
 
-    </div>
+    </a>
   )
 }
 

@@ -98,7 +98,7 @@ const Services = () => {
 </div>
 
 
-<strong className="kindOf">Tipo de Servicios</strong>
+<strong className="kindOf">{t('KindOf')}</strong>
 
 <ul   className="servicesListServ">
 
@@ -113,15 +113,14 @@ const Services = () => {
               <div className="code">
                 <i className="bi bi-braces"></i>
               </div>
-              <h3> Diseño y Desarrollo Web</h3>
+              <h3> {t('webDesign')}</h3>
               <button onClick={handleDescriptionToggle}>
-                {isDescriptionOpen ? 'ver menos' : 'ver mas'}
-              </button>
+            {isDescriptionOpen ? t('buttonTextReadLess') : t('buttonTextReadMore')}
+          </button>
               {isDescriptionOpen && (
                 <div className="description">
                   <div className="descLetter">
-                    Como diseñador web, soy un profesional altamente creativo y versátil que combina habilidades en diseño gráfico, programación y usabilidad para conceptualizar, planificar y construir sitios web visualmente cautivadores, intuitivos y efectivos que satisfacen las necesidades y objetivos únicos de tus clientes, brindando una experiencia de usuario excepcional y una presencia en línea impactante. Tu capacidad para fusionar estética, funcionalidad y tecnología te permite traducir ideas en interfaces digitales coherentes y atractivas, empleando una variedad de herramientas y lenguajes de programación, y siempre manteniéndote al tanto de las últimas tendencias y avances en diseño y desarrollo web para ofrecer soluciones innovadoras que impulsen el éxito en el mundo digital.
-                  </div>
+                  {t('designWeb')}                  </div>
                   <div className="descimg"></div>
                 </div>
               )}
@@ -135,12 +134,11 @@ const Services = () => {
                               <div className="code">
                                 <i className="bi bi-activity"></i>                         
                                </div>
-                               <h3> Optimización para Motores de Búsqueda (SEO)</h3>
-                              <p>Ayudar a mejorar el posicionamiento de los sitios web en los motores de búsqueda mediante prácticas de SEO y optimización de contenido
-                              </p>
-                              <p>Impulsar la clasificación de Google
+                               <h3> {t('servicesPage3.title')}</h3>
+                              <p>{t('servicesPage.description')}</p>
+                              <p>{t('servicesPage.points')}
  <i className="bi bi-check2"></i></p>
-                              <p>Optimización de velocidad de página
+                              <p>{t('servicesPage.points2')}
  <i className="bi bi-check2"></i></p>
                                                      
                              
@@ -158,15 +156,16 @@ const Services = () => {
                          <div className="code">
                          <i className="bi bi-phone"></i>
                                </div>
-                              <h3> Diseño Responsivo</h3>
+                              <h3>{t('responsiveDesign')} </h3>
                               <button onClick={handleDescriptionToggle2}>
-                {isDescriptionOpen2 ? 'ver menos' : 'ver mas'}
-              </button>
+            {isDescriptionOpen2 ? t('buttonTextReadLess') : t('buttonTextReadMore')}
+          </button>
 
               {isDescriptionOpen2 && (
                 <div className="description">
                   <div className="descLetter">
-                  Como diseñador web especializado en diseño responsivo, tu trabajo destaca por tu habilidad para crear sitios web que se adaptan perfectamente a diferentes dispositivos y tamaños de pantalla. Tu enfoque en la experiencia del usuario te ha permitido diseñar interfaces intuitivas y visualmente atractivas que garantizan una navegación fluida y una interacción cómoda en computadoras de escritorio, tabletas y teléfonos móviles.                  </div>
+                  {t('responsiveDesignDesc')}                  
+                              </div>
                   <div className="descimg">
 
 
@@ -185,12 +184,11 @@ const Services = () => {
                          <div className="code">
                                   <i className="bi bi-crop"></i>                  
                                </div>
-                              <h3> UI/UX Diseno</h3>
-                              <p>Disenamos y Desarrollamos poderosos y modernos sitios web para todo tipo de negocios
-                              </p>
-                              <p>Diseno de Escritorio <i className="bi bi-check2"></i></p>
-                              <p>Diseno de telefono <i className="bi bi-check2"></i></p>
-                              <p>Diseno de tablet <i className="bi bi-check2"></i></p>
+                              <h3> {t('servicesPage2.title')}</h3>
+                              <p>{t('servicesPage2.description')}</p>
+                              <p>{t('servicesPage2.points4')} <i className="bi bi-check2"></i></p>
+                              <p>{t('servicesPage2.points5')} <i className="bi bi-check2"></i></p>
+                              <p>{t('servicesPage2.points6')} <i className="bi bi-check2"></i></p>
                              
             </div>
                     </li>
@@ -206,15 +204,15 @@ const Services = () => {
 
 <div className="code">
 <i className="bi bi-people"></i>                               </div>
-     <h3> Consultoría y Asesoramiento</h3>
+     <h3> {t('consulting')}</h3>
      <button onClick={handleDescriptionToggle3}>
-{isDescriptionOpen3 ? 'ver menos' : 'ver mas'}
-</button>
+            {isDescriptionOpen3 ? t('buttonTextReadLess') : t('buttonTextReadMore')}
+          </button>
 
 {isDescriptionOpen3 && (
 <div className="description">
 <div className="descLetter">
-Como consultor y asesor de páginas web, tu trabajo se destaca por brindar una guía experta y estratégica a tus clientes, ayudándoles a maximizar el potencial de sus sitios web y lograr resultados significativos en el mundo digital. Tu enfoque va más allá del diseño y desarrollo, ya que te centras en entender las necesidades y objetivos únicos de cada cliente para ofrecer soluciones personalizadas que impulsen su presencia en línea.                  </div>
+{t('consultingDescription')} </div>
 <div className="descimg2"></div>
 </div>
 )}
@@ -232,9 +230,13 @@ Como consultor y asesor de páginas web, tu trabajo se destaca por brindar una g
                          <div className="carta2">
 
                          <div className="code">
-                         <i className="bi bi-arrow-clockwise"></i>                               </div>
-                              <h3> Mantenimiento y Actualización de Sitios Web</h3>
-                              <button>ver mas</button>
+                         <i className="bi bi-arrow-clockwise"></i>                        
+                                </div>
+                              <h3> {t('servicesPage3.title')} </h3>
+                              <p>{t('servicesPage3.points7')} <i className="bi bi-check2"></i></p>
+                              <p>{t('servicesPage3.points8')} <i className="bi bi-check2"></i></p>
+                              <p>{t('servicesPage3.points9')} <i className="bi bi-check2"></i></p>
+                             
 
                          </div>  </li>
 

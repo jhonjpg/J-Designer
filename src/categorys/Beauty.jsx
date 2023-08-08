@@ -1,6 +1,7 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
 
+
 const Beauty = () => {
 
 
@@ -12,7 +13,7 @@ const Beauty = () => {
   return (
     <>
 
-<div className="containerProyects">
+<a className="containerProyects" href="https://jhonjpg.github.io/glamour/" target="_blank">
 
 
     <div className="proyects">
@@ -27,8 +28,7 @@ const Beauty = () => {
 
     </div>
 
-    </div>
-
+    </a>
     </>
   )
 }

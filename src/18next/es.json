@@ -142,9 +142,50 @@
         {
             "review": "JP Designer se destacó por su creatividad y capacidad para adaptarse a nuestras necesidades específicas. ¡Muy feliz con el resultado final!"
         }
-    ]
+    ],
 
 
-
+    "servicesPage": {
+        "icon": "bi bi-activity",
+        "title": "Optimización para Motores de Búsqueda (SEO)",
+        "description": "Ayudar a mejorar el posicionamiento de los sitios web en los motores de búsqueda mediante prácticas de SEO y optimización de contenido.",
+        "points": "Impulsar la clasificación de Google",
+        "points2": "Crecimiento de tráfico orgánico",
+        "points3": "Optimización de velocidad de página"
+    },
+    "servicesPage2": {
+        "icon": "bi bi-crop",
+        "title": "Diseño UI/UX",
+        "description": "Diseñamos y Desarrollamos poderosos y modernos sitios web para todo tipo de negocios.",
+        "points4": "Diseño de Escritorio",
+        "points5": "Diseño de Teléfono",
+        "points6": "Diseño de Tablet"
+    },
+    "servicesPage3": {
+        "icon": "bi bi-arrow-clockwise",
+        "title": "Mantenimiento y Actualización de Sitios Web",
+        "description": "Ofrecer servicios de mantenimiento y actualización periódica para asegurar que los sitios web estén siempre actualizados y funcionando correctamente.",
+        "points7": "Diseño de Escritorio",
+        "points8": "Diseño de Teléfono",
+        "points9": "Diseño de Tablet"
+    },
+    "webDesign": "Diseño y Desarrollo Web",
+    "KindOf": "Tipo de Servicios",
+    "seoOptimization": "Optimización para Motores de Búsqueda (SEO)",
+    "responsiveDesign": "Diseño Responsivo",
+    "uiuxDesign": "Diseño UI/UX",
+    "consulting": "Consultoría y Asesoramiento",
+    "maintenance": "Mantenimiento y Actualización de Sitios Web",
+    "readMore": "Ver Más",
+    "readLess": "Ver Menos",
+    "designWeb": "Como diseñador web, soy un profesional altamente creativo y versátil que combina habilidades en diseño gráfico, programación y usabilidad para conceptualizar, planificar y construir sitios web visualmente cautivadores, intuitivos y efectivos que satisfacen las necesidades y objetivos únicos de tus clientes, brindando una experiencia de usuario excepcional y una presencia en línea impactante. Tu capacidad para fusionar estética, funcionalidad y tecnología te permite traducir ideas en interfaces digitales coherentes y atractivas, empleando una variedad de herramientas y lenguajes de programación, y siempre manteniéndote al tanto de las últimas tendencias y avances en diseño y desarrollo web para ofrecer soluciones innovadoras que impulsen el éxito en el mundo digital.",
+    "seoDescription": "Ayudar a mejorar el posicionamiento de los sitios web en los motores de búsqueda mediante prácticas de SEO y optimización de contenido. Impulsar la clasificación de Google. Optimización de velocidad de página.",
+    "speedOptimization": "Optimización de velocidad de página",
+    "responsiveDesignDesc": "Como diseñador web especializado en diseño responsivo, tu trabajo destaca por tu habilidad para crear sitios web que se adaptan perfectamente a diferentes dispositivos y tamaños de pantalla. Tu enfoque en la experiencia del usuario te ha permitido diseñar interfaces intuitivas y visualmente atractivas que garantizan una navegación fluida y una interacción cómoda en computadoras de escritorio, tabletas y teléfonos móviles.",
+    "uiuxDesignDesc": "Diseñamos y desarrollamos potentes y modernos sitios web para todo tipo de negocios. Diseño de escritorio, diseño de teléfono y diseño de tablet.",
+    "consultingDescription": "Como consultor y asesor de páginas web, tu trabajo se destaca por brindar una guía experta y estratégica a tus clientes, ayudándoles a maximizar el potencial de sus sitios web y lograr resultados significativos en el mundo digital. Tu enfoque va más allá del diseño y desarrollo, ya que te centras en entender las necesidades y objetivos únicos de cada cliente para ofrecer soluciones personalizadas que impulsen su presencia en línea.",
+    "componentTranslation": "Este es un componente traducido usando useTranslation.",
+    "buttonTextReadMore": "Leer Mas",
+    "buttonTextReadLess": "Menos"
 
 }

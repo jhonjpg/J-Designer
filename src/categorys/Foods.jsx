@@ -8,7 +8,7 @@ const Foods = () => {
     threshold: 0,
   });
   return (
-<div   className="containerProyects">
+<a className="containerProyects" href="https://jhonjpg.github.io/theKathCafeteria/" target="_blank">
     <div className="proyects">
 
       <img src="./asssets/proyects/kathPage.jpg" alt="" />
@@ -21,7 +21,7 @@ const Foods = () => {
 
     </div>
 
-    </div>
+    </a>
   )
 }
 
