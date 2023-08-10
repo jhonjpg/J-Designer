@@ -4,7 +4,8 @@ import SliderReview from '../components/SliderReview'
 import ContactForm from '../components/ContactForm';
 import { AboutParallax } from '../helpers/AboutParallax';
 import { useTranslation } from 'react-i18next'; // Importamos useTranslation
-import { InView } from 'react-intersection-observer';
+import { Parallax, Background } from 'react-parallax';
+
 
 
 
@@ -55,8 +56,31 @@ const About = () => {
       <div className="aboutFront">
      
 
+
+
 <AboutParallax/>
    
+<Parallax
+      className="floate"
+      strength={-600}
+      style={{
+        position: 'absolute',
+       bottom:"0px"
+      }}
+     >
+
+
+
+<Background className="span1"> 
+<img src="skills/techno.jpg" alt=""  /></Background>
+
+
+
+
+
+
+    </Parallax>
+
 
       </div>
 

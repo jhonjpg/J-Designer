@@ -1,5 +1,4 @@
 import React from 'react'
-import { Parallax, Background } from 'react-parallax';
 import { useTranslation } from 'react-i18next'; // Importamos useTranslation
 
 
@@ -21,28 +20,6 @@ export const AboutParallax = () => {
 
     <div className="out">
 
-  
-
-    <Parallax
-      className="floate"
-      strength={-600}
-      style={{
-        position: 'absolute',
-       bottom:"0px"
-      }}
-     >
-
-
-
-<Background className="span1"> 
-<img src="skills/techno.jpg" alt=""  /></Background>
-
-
-
-
-
-
-    </Parallax>
 
 
    

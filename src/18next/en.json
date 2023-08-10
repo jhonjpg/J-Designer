@@ -119,17 +119,18 @@
 
      "aboutMe": {
          "about": "About Me",
-         "heading": "Who Am I?",
-         "description0": "As a web developer, I specialize in designing and developing attractive and functional user interfaces. With experience in React, JavaScript, and many other technologies, I focus on creating responsive and optimized websites to provide an exceptional user experience.",
-         "toggleButtonKnowMore": "Know More",
-         "description1": "I am a self-taught web designer and developer with 3 years of experience. Over those 3 years, I have taken and learned many platforms and technologies that keep me alert and ahead of my competition. I strive to create custom websites for each client while delivering the highest quality product on the market.",
-         "description2": "You will be hiring someone who will provide you with an individualized website that meets your requirements. Clients in the past have told me that with my help, they have taken their businesses to new heights and couldn't be happier.",
-         "description3": "Extensive technical knowledge: As a web developer, you have a strong knowledge of programming languages such as HTML, CSS, bootstrap, tailwind, JavaScript, jQuery, React, node js, github, mongodb. You are also familiar with tools and technologies related to web development.",
-         "toggleButtonShowMore": "Show More",
-         "toggleButtonShowLess": "Show Less",
-         "additionalDescription1": "Creativity and innovation: You can tackle complex problems with creative and innovative solutions. Your ability to think outside the box allows you to offer unique approaches to web design and development.",
-         "additionalDescription2": "Attention to detail: You are meticulous in your work and pay attention to details. This is essential to ensure websites are accurate, function smoothly, and are visually appealing.",
+         "heading": "Who I Am",
+         "description0": "As a web developer, I specialize in designing and developing attractive and functional user interfaces. With expertise in React, JavaScript, and many other technologies, my focus is on creating responsive and optimized websites to provide an exceptional user experience.",
+         "toggleButtonKnowMore": "Learn more",
+         "description1": "I am a self-taught web designer and developer with 3 years of experience. During those 3 years, I took on and learned many platforms and technologies that enable me to stay alert and ahead of my competition. I strive to create custom websites for each client while providing them with the highest quality product in the market.",
+         "description2": "You will be hiring someone who will provide you with an individualized website that meets your requirements.",
+         "description3": "Extensive technical knowledge: As a web developer, I have a solid understanding of programming languages such as HTML, CSS, Bootstrap, Tailwind, JavaScript, jQuery, React, Node.js, GitHub, and MongoDB. I am also familiar with tools and technologies related to web development.",
+         "toggleButtonShowMore": "Show more",
+         "toggleButtonShowLess": "Show less",
+         "additionalDescription1": "I am capable of tackling complex issues with creative and innovative solutions. My ability to think outside the box enables me to offer unique approaches to web design and development.",
+         "additionalDescription2": "I am meticulous in my work and pay attention to details. This is essential to ensure that websites are accurate, function smoothly, and are visually appealing.",
          "skillsHeading": "Skills"
+
 
      },
 
