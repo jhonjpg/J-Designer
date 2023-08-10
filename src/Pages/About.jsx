@@ -127,10 +127,8 @@ const About = () => {
 
 
 
-    
-          <InView  >
-            {({ inView, ref, entry }) => (
-          <div ref={ref} className={inView ? 'reviewDiv' : 'reviewDivoff'}>
+     
+          <div className="reviewDiv" >
 
 
          
@@ -139,12 +137,10 @@ const About = () => {
 
 </div>
 
-)}
-</InView>
-<ContactForm/>
 
-        </div>
+        </div>  
 
+        <ContactForm/>
 
 
       </section>

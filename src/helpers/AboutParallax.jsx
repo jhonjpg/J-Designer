@@ -25,10 +25,10 @@ export const AboutParallax = () => {
 
     <Parallax
       className="floate"
-      strength={-2200}
+      strength={-600}
       style={{
         position: 'absolute',
-       botom:"0px"
+       bottom:"0px"
       }}
      >
 
