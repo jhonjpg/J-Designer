@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../components/Navbar'
-import SliderReview from '../components/SliderReview'
 import ContactForm from '../components/ContactForm';
 import { AboutParallax } from '../helpers/AboutParallax';
 import { useTranslation } from 'react-i18next'; // Importamos useTranslation
@@ -150,16 +148,6 @@ const About = () => {
 
 
 
-
-     
-          <div className="reviewDiv" >
-
-
-         
-<SliderReview/>
-
-
-</div>
 
 
         </div>  

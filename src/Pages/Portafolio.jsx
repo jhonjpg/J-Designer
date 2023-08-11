@@ -6,6 +6,7 @@ import Laws from '../categorys/Laws';
 import Foods from '../categorys/Foods';
 import Beauty from '../categorys/Beauty';
 import Todos from '../categorys/Todos';
+import SliderReview from '../components/SliderReview'
 import { useTranslation } from 'react-i18next'; // Importamos useTranslation
 
 
@@ -46,7 +47,7 @@ const Portafolio = () => {
 
           <span  style={{ '--i': 4 }}>
 
-          <img src="./asssets/proyects/gym.jpg" alt="" />
+          <img src="./asssets/proyects/webgym.jpg" alt="" />
           </span>
 
 
@@ -113,7 +114,19 @@ const Portafolio = () => {
 
 
 
+     
 </section>
+
+
+<div className="reviewDiv" >
+
+
+         
+<SliderReview/>
+
+
+</div>
+
 
 <ContactForm/>
 </section>
