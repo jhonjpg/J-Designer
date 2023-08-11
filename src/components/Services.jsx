@@ -64,11 +64,12 @@ const Services = () => {
 
     </Parallax>
 
+    <InView triggerOnce="false" >
+            {({ inView, ref, entry }) => (
     <ul className="servicesList">
         {servicesList.map((service, index) => (
-          <InView triggerOnce="false" key={index}>
-            {({ inView, ref, entry }) => (
-              <li ref={ref} className={inView ? 'cartas' : ''}>
+        
+              <li  className="cartas">
                 <div className="carta2">
                      <div className="code">
                 <i className={service.icon}></i>                          
@@ -83,11 +84,11 @@ const Services = () => {
                   {service.buttonText && <Link className="btnS" to="/j-designer/services">{t(service.buttonText)}</Link>}
                 </div>
               </li>
-            )}
-          </InView>
+            
         ))}
       </ul>
-
+)}
+</InView>
 {/* 
                <ul   className="servicesListDevice">
 

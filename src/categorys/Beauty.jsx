@@ -13,7 +13,7 @@ const Beauty = () => {
   return (
     <>
 
-<a className="containerProyects" href="https://jhonjpg.github.io/glamour/" target="_blank">
+<a ref={ref} className="containerProyects" href="https://jhonjpg.github.io/glamour/" target="_blank">
 
 
     <div className="proyects">

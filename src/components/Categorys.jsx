@@ -54,13 +54,28 @@ const Categorys = () => {
   return (
 
     <>
-<section className={effCategory}>
+<section className="categorySection">
 
 
-<div  className="strng" >  &lt;/&gt;
+
+<InView  >
+            {({ inView, ref, entry }) => (
+
+<div ref={ref} className={inView ? 'strng' : 'offstrng'} >  &lt;/&gt;
  </div>
 
-<strong>{t("projects")}</strong>
+)}
+</InView>
+
+
+<InView  >
+            {({ inView, ref, entry }) => (
+
+<strong ref={ref} className={inView ? 'strongCategory' : 'offstrongCategory'}>{t("projects")}</strong>
+
+)}
+</InView>
+
 
 <div id="categorys">
 <ul>
