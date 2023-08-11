@@ -320,11 +320,10 @@
         width: 48%;
     }
     .descimg2 {
-        background-image: url("https://cdn.pixabay.com/photo/2018/03/04/20/43/webinar-3199164_1280.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 80%;
+        height: 100%;
         width: 48%;
     }
     .descLetter {
