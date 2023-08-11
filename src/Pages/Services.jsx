@@ -166,7 +166,7 @@ const Services = () => {
                   <div className="descLetter">
                   {t('responsiveDesignDesc')}                  
                               </div>
-                  <div className="descimg">
+                  <div className="descimg2">
 
 
 
@@ -213,7 +213,7 @@ const Services = () => {
 <div className="description">
 <div className="descLetter">
 {t('consultingDescription')} </div>
-<div className="descimg2"></div>
+<div className="descimg3"></div>
 </div>
 )}
 </div>

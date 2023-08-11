@@ -71,7 +71,7 @@ const Portafolio = () => {
 
 
 
-<strong>{t("projects")}</strong>
+<strong className="fs-1 text-light mb-2">{t("projects")}</strong>
 
 <div id="categorys">
 <ul>
