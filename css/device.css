@@ -197,7 +197,7 @@
         justify-content: space-around;
         padding: 1.3em;
         background: linear-gradient( transparent, rgb(0 0 0), rgb(0 0 0));
-        animation: opa 5s 1;
+        animation: turnOn 1.6s 1;
     }
     .offserviceH .servicesList {
         display: flex;
@@ -234,14 +234,21 @@
         }
     }
     .serviceH .strng {
-        width: 40% !important;
+        /* width: 40% !important;
         background-color: rgb(22, 22, 22);
+        background-color: black;
+        border-radius: 0px 0px 20px 20px;
+        /* background: radial-gradient(black, rgb(51, 51, 51)); */
+        margin-top: 40px;
+        width: 50% !important;
+        text-align: center;
+        color: white;
         background-color: black;
         border-radius: 0px 0px 20px 20px;
         /* background: radial-gradient(black, rgb(51, 51, 51)); */
         animation: service 0.7s 1;
         transform: translateY(0) rotateX(0);
-        transition: 1s;
+        box-shadow: var(--shadow-color) 0px 54px 55px, var(--shadow-color) 0px -12px 30px, var(--shadow-color) 0px 4px 6px, var(--shadow-color) 0px 12px 13px, var(--shadow-color) 0px -3px 5px;
     }
     @keyframes service {
         0% {
@@ -298,6 +305,7 @@
     .description {
         display: flex;
         flex-direction: column !important;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
