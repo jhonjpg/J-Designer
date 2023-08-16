@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import Proyects from '../helpers/proyects.json';
-
 import { InView } from 'react-intersection-observer';
-
 import { useTranslation } from 'react-i18next'; // Importamos useTranslation
 
 
-const Categorys = () => {
+const Proyect = () => {
 
 
   const { t } = useTranslation(); // Obtener la función t() para traducir
@@ -54,7 +52,7 @@ const Categorys = () => {
 
 
 
-<InView  >
+<InView  triggerOnce="false" >
             {({ inView, ref, entry }) => (
 
 <div ref={ref} className={inView ? 'strng' : 'offstrng'} >  &lt;/&gt;
@@ -64,7 +62,7 @@ const Categorys = () => {
 </InView>
 
 
-<InView  >
+<InView triggerOnce="false" >
             {({ inView, ref, entry }) => (
 
 <strong ref={ref} className={inView ? 'strongCategory' : 'offstrongCategory'}>{t("projects")}</strong>
@@ -100,9 +98,9 @@ const Categorys = () => {
 </div>
 
 
-<InView triggerOnce={false}>
+<InView triggerOnce="false">
   {({ inView, ref, entry }) => (
-    <div ref={ref} className={inView ? 'fullProyects' : ''}>
+    <div ref={ref} className={inView ? 'fullProyects' : 'offCon'}>
       {Proyects.proyectos.map((proyecto, index) => {
         if (activeComponent === 'all' || activeComponent === proyecto.categoria) {
           return (
@@ -136,4 +134,4 @@ const Categorys = () => {
 )
 }
 
-export default Categorys
+export default Proyect

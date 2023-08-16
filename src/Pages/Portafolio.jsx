@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
 import ContactForm from '../components/ContactForm';
-import Medical from '../categorys/Medical';
-import Media from '../categorys/Media';
-import Laws from '../categorys/Laws';
-import Foods from '../categorys/Foods';
-import Beauty from '../categorys/Beauty';
-import Todos from '../categorys/Todos';
+import Proyects from '../helpers/proyects.json';
 import SliderReview from '../components/SliderReview'
 import { useTranslation } from 'react-i18next'; // Importamos useTranslation
+import Proyect from '../components/Proyect';
 
 
 
@@ -60,6 +56,11 @@ const Portafolio = () => {
           <img src="./asssets/proyects/dramelina.jpg" alt="" />
           </span>
 
+          <span  style={{ '--i': 6 }}>
+
+<img src="./asssets/proyects/dreamHome.jpg" alt="" />
+</span>
+
         </div>
 
 
@@ -71,46 +72,9 @@ const Portafolio = () => {
 
 
 
-<strong className="fs-1 text-light mb-2">{t("projects")}</strong>
 
-<div id="categorys">
-<ul>
-            <li className="" onClick={() => handleComponentClick('all')}>
-              {t('categories.all')}
-            </li>
-            <li className="" onClick={() => handleComponentClick('beauty')}>
-              {t('categories.beauty')}
-            </li>
-            <li className="" onClick={() => handleComponentClick('foods')}>
-              {t('categories.foods')}
-            </li>
-            <li className="" onClick={() => handleComponentClick('laws')}>
-              {t('categories.laws')}
-            </li>
-            <li className="" onClick={() => handleComponentClick('medical')}>
-              {t('categories.medical')}
-            </li>
-            <li className="" onClick={() => handleComponentClick('media')}>
-              {t('categories.media')}
-            </li>
-       
-          </ul>
+<Proyect/>
 
-
-</div>
-
-
-<div className="fullProyects">
-{activeComponent === 'all' && <Todos/>}
-
-{activeComponent === 'beauty' && <Beauty />}
-{activeComponent === 'construction' && <Construction />}
-{activeComponent === 'foods' && <Foods />}
-{activeComponent === 'laws' && <Laws />}
-{activeComponent === 'medical' && <Medical />}
-{activeComponent === 'media' && <Media />}
-
-</div>
 
 
 

@@ -121,7 +121,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 {/* other device */}
 
 
-<div className="devices">
+<div className={menu ? "devices " : "devices activat"}  >
 
 
 
