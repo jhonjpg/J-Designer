@@ -24,7 +24,7 @@ const ContactForm = () => {
   
     const handleDownloadCV = () => {
       // Reemplaza 'ruta_de_descarga_cv' con la URL de descarga de tu CV
-      const cvDownloadUrl = 'img/contact/Jonathan_Pena.pdf';
+      const cvDownloadUrl = 'img/contact/JonathanPena_Resume.pdf';
       window.open(cvDownloadUrl, '_blank');
     };
 

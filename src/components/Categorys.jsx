@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
-import Medical from '../categorys/Medical';
-import Media from '../categorys/Media';
-import Laws from '../categorys/Laws';
-import Foods from '../categorys/Foods';
-import Beauty from '../categorys/Beauty';
-import Todos from '../categorys/Todos';
+import Proyects from '../helpers/proyects.json';
+
 import { InView } from 'react-intersection-observer';
 
 import { useTranslation } from 'react-i18next'; // Importamos useTranslation
@@ -104,22 +100,33 @@ const Categorys = () => {
 </div>
 
 
+<InView triggerOnce={false}>
+  {({ inView, ref, entry }) => (
+    <div ref={ref} className={inView ? 'fullProyects' : ''}>
+      {Proyects.proyectos.map((proyecto, index) => {
+        if (activeComponent === 'all' || activeComponent === proyecto.categoria) {
+          return (
+            <div key={index} className="proyecto">
+              <h3>{proyecto.nombre}</h3>
+              <p>{proyecto.descripcion}</p>
 
-<InView triggerOnce="false" >
-            {({ inView, ref, entry }) => (
+              <a className="containerProyects" href={proyecto.link} target="_blank">
+                <div className="proyects">
+                  <img src={proyecto.imagen} alt="" />
+                </div>
 
-<div ref={ref} className={inView ? 'fullProyects' : ''}>
-{activeComponent === 'all' && <Todos/>}
-
-{activeComponent === 'beauty' && <Beauty />}
-{activeComponent === 'foods' && <Foods />}
-{activeComponent === 'laws' && <Laws />}
-{activeComponent === 'medical' && <Medical />}
-{activeComponent === 'media' && <Media />}
-
-</div>
-
-)}
+                <div className="proyectSmall">
+                  <img src={proyecto.imagen2} alt="" />
+                </div>
+              </a>
+            </div>
+          );
+        } else {
+          return null;
+        }
+      })}
+    </div>
+  )}
 </InView>
 
 

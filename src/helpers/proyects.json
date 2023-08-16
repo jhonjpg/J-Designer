@@ -1,0 +1,40 @@
+{
+    "proyectos": [{
+            "categoria": "beauty",
+            "imagen": "./asssets/proyects/glamour.jpg",
+            "imagen2": "./asssets/proyects/glamour2.jpg",
+            "link": "https://jhonjpg.github.io/glamour/"
+        },
+        {
+            "categoria": "laws",
+            "imagen": "./asssets/proyects/law.jpg",
+            "imagen2": "./asssets/proyects/law2.jpg",
+            "link": "https://jhonjpg.github.io/abogada/"
+        },
+        {
+            "categoria": "foods",
+            "imagen": "./asssets/proyects/kathPage.jpg",
+            "imagen2": "./asssets/proyects/kathPage2.jpg",
+            "link": "https://jhonjpg.github.io/theKathCafeteria/"
+        },
+        {
+            "categoria": "media",
+            "imagen": "./asssets/proyects/webgym.jpg",
+            "imagen2": "./asssets/proyects/gym2.jpg",
+            "link": "https://jhonjpg.github.io/lyftgym/"
+        },
+        {
+            "categoria": "medical",
+            "imagen": "./asssets/proyects/dramelina.jpg",
+            "imagen2": "./asssets/proyects/dramelina2.jpg",
+            "link": "https://jhonjpg.github.io/DraMelina/"
+        },
+
+        {
+            "categoria": "laws",
+            "imagen": "./asssets/proyects/dreamHome.jpg",
+            "imagen2": "./asssets/proyects/dreamHome2.jpg",
+            "link": "https://jhonjpg.github.io/dreamHome/"
+        }
+    ]
+}
