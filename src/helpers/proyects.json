@@ -35,6 +35,13 @@
             "imagen": "./asssets/proyects/dreamHome.jpg",
             "imagen2": "./asssets/proyects/dreamHome2.jpg",
             "link": "https://jhonjpg.github.io/dreamHome/"
+        },
+
+        {
+            "categoria": "beauty",
+            "imagen": "./asssets/proyects/barber.jpg",
+            "imagen2": "./asssets/proyects/barber2.jpg",
+            "link": "https://jhonjpg.github.io/BarberShop/"
         }
     ]
 }

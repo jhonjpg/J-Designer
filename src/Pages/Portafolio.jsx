@@ -56,9 +56,15 @@ const Portafolio = () => {
           <img src="./asssets/proyects/dramelina.jpg" alt="" />
           </span>
 
-          <span  style={{ '--i': 6 }}>
+          <span  style={{ '--i': 7 }}>
 
 <img src="./asssets/proyects/dreamHome.jpg" alt="" />
+</span>
+
+
+<span  style={{ '--i': 8 }}>
+
+<img src="./asssets/proyects/barber.jpg" alt="" />
 </span>
 
         </div>
