@@ -628,7 +628,7 @@ input:checked+.slider:before {
 .letterServc {
     position: relative;
     top: 90px;
-    font-size: 3.5em;
+    font-size: 3em;
     text-align: center;
     color: white;
     font-weight: bold;
